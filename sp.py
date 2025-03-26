@@ -70,16 +70,19 @@ G3 = '\x1b[38;5;48m'
 def clear():os.system('clear');print(logo)
 def linex():print(f'{A}──────────────────────────────────────────────────')
 #__________________[ LOGO ]__________________#
-logo =f"""\x1b[1;97m
-
-          
-\033[1;33m  
-\033[1;97m    
-\033[1;97m    
-\033[1;31m    
-\033[1;97m    
-\033[1;97m    
-\033[1;34m 
+logo =f"""\x1b[1;97m   
+\033[1;33m   
+  /$$$$$$           
+ /$$__  $$          
+| $$  \__/  /$$$$$$ 
+|  $$$$$$  /$$__  $$
+ \____  $$| $$  \ $$
+ /$$  \ $$| $$  | $$
+|  $$$$$$/| $$$$$$$/
+ \______/ | $$____/ 
+          | $$      
+          | $$      
+          |__/      
 {A}──────────────────────────────────────────────────"""
 #__________________[ RESULT ]__________________#
 def result(OKs,cps):
@@ -98,8 +101,8 @@ def menu():
     print(f'{G1}[{A}2{G2}]{G2} RANDOM CLONING')
     print(f'{G1}[{A}3{G3}]{G3} CONTACT TOOL OWNER')
     print(f'{G1}[{A}0{G4}]{G4} EXIT TOOLS')
-    print(f'Tool Type : \033[1;33mtrail\033[1;37m')
-    print(f'NOTE : \033[1;31m  :)\033[1;37m')
+    print(f'Tool Type : \033[1;33m trail\033[1;37m')
+    print(f'NOTE : \033[1;31m send feedback  :)\033[1;37m')
     linex()
     select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
     if select =='1':
