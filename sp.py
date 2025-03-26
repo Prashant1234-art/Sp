@@ -382,15 +382,15 @@ class main_crack():
     def pasw(self):       
             pw = []
             clear()
-            print(f'{G1}[{A}={G2}]{G2} EXAMPLE {A}:{G2} BD 10-18/INDIA 3-5 / Best 30 Pass');linex()
+            print(f'{G1}[{A}={G2}]{G2} EXAMPLE {A}:{G2} / Best 20 Pass');linex()
             sl = int(input(f'{G1}[{A}?{G3}]{G3} PASSWORD LIMIT {A}:{G3} '))
             clear()
             print(f'{G1}[{A}?{G4}]{G4} EXAMPLE {A}:{G4} first123/firstlast/first@123 etc: ')
             linex()
             if sl =='':
-                print(f'{G1}[{A}={G5}]{G5} PUT LIMIT BETWEEN 1 TO 30 ')
-            elif sl > 30:
-                print(f'{G1}[{A}={G1}]{G1} PASSWORD LIMIT SHOULD NOT BE GREATER THAN 30')
+                print(f'{G1}[{A}={G5}]{G5} PUT LIMIT BETWEEN 1 TO 20 ')
+            elif sl > 20:
+                print(f'{G1}[{A}={G1}]{G1} PASSWORD LIMIT SHOULD NOT BE GREATER THAN 20')
             else:
                 for sr in range(sl):
                     pw.append(input(f'{G1}[{A}={G1}]{G1} PASSWORD NO {G1}[{A}{sr+1}{G1}] {A}:{G1} '))
