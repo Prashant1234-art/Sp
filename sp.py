@@ -399,7 +399,7 @@ class main_crack():
             print(f'{G1}[{A}={G2}]{G2} PASSWORD LIMIT {A}:{G1} {sl} ')
             print(f'{G1}[{A}={G3}]{G3} TURN {G3}[{A}ON{A}/{A}OFF{G3}]{G3} AIRPLANE MODE EVERY {A}3{G3} MIN')
             linex()
-            with sanjidabou(max_workers=30) as SHAJON:
+            with sanjidabou(max_workers=20) as SHAJON:
                 for zsb in self.id:
                    try:
                        uid, name = zsb.split('|')
