@@ -101,8 +101,8 @@ def menu():
     print(f'{G1}[{A}2{G2}]{G2} RANDOM CLONING')
     print(f'{G1}[{A}3{G3}]{G3} CONTACT TOOL OWNER')
     print(f'{G1}[{A}0{G4}]{G4} EXIT TOOLS')
-    print(f'Tool Type : \033[1;33mFREE HE MAZY KRO\033[1;37m')
-    print(f'NOTE : \033[1;31m COPY PASTER UPDATE BUT NO HATE :)\033[1;37m')
+    print(f'Tool Type : \033[1;33m namaste \033[1;37m')
+    print(f'NOTE : \033[1;31m SP DAD  :)\033[1;37m')
     linex()
     select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
     if select =='1':
