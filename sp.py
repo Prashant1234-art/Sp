@@ -99,9 +99,8 @@ def menu():
     clear()
     print(f'{G1}[{A}1{G1}]{G1} FILE CLONING')
     print(f'{G1}[{A}2{G2}]{G2} RANDOM CLONING')
-    print(f'{G1}[{A}3{G4}]{G3} OLD CLONING')
-    print(f'{G1}[{A}4{G4}]{G4} AUTO CREAT CLONING')
-    print(f'{G1}[{G5{G5}]{G5}print(f'{G1}[{A}4{G4}]{G4} CONTACT TOOL OWNER')
+    print(f'{G1}[{A}4{G3}]{G3} AUTO CREAT CLONING')
+    print(f'{G1}[{G4{G4}]{G4}print(f'{G1}[{A}4{G4}]{G4} CONTACT TOOL OWNER')
     
     print(f'{G1}[{A}0{G4}]{G4} EXIT TOOLS')
     print(f'Tool Type : \033[1;33m trail\033[1;37m')
