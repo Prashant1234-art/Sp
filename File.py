@@ -113,7 +113,6 @@ logo =f"""\x1b[1;97m
           | $$      
           | $$      
           |__/      
-{A}──────────────────────────────────────────────────"""
 #--------------------[ ENTRY ]--------------#    
 
 def entr():
@@ -480,7 +479,7 @@ def dump_new():
         saurauuu_uidzz = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID ' + str(SAURAVXX + 1) + ' : ')
         
         
-        if saurauuu_uidzz.startswith(('6155', '6156'61573'61574')):
+        if saurauuu_uidzz.startswith(('6155', '6156'61574')):
             uid.append(saurauuu_uidzz)
 
     linex()
