@@ -100,7 +100,20 @@ def linex():
 def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)    
 #------------------[ LOGO ]-----------------#
-logo =f"""    """
+logo =f"""\x1b[1;97m   
+\033[1;33m   
+  /$$$$$$           
+ /$$__  $$          
+| $$  \__/  /$$$$$$ 
+|  $$$$$$  /$$__  $$
+ \____  $$| $$  \ $$
+ /$$  \ $$| $$  | $$
+|  $$$$$$/| $$$$$$$/
+ \______/ | $$____/ 
+          | $$      
+          | $$      
+          |__/      
+{A}──────────────────────────────────────────────────"""
 #--------------------[ ENTRY ]--------------#    
 
 def entr():
@@ -439,7 +452,7 @@ def dump_new():
     except IOError:
         login()
     
-    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER FILE NAME WITHOUT "/SDCARD/"')
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER FILE NAME WITHOUT "/SDCARD/SP.txt"')
     linex()
     naame = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m FILE NAME : ')
     linex()
@@ -467,7 +480,7 @@ def dump_new():
         saurauuu_uidzz = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m INPUT UID ' + str(SAURAVXX + 1) + ' : ')
         
         
-        if saurauuu_uidzz.startswith(('6155', '6156')):
+        if saurauuu_uidzz.startswith(('6155', '6156'61573'61574')):
             uid.append(saurauuu_uidzz)
 
     linex()
@@ -597,7 +610,7 @@ def dump_followers():
     except IOError:
         login()
 
-    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER FILE NAME WITHOUT "/SDCARD/"')
+    print(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m ENTER FILE NAME WITHOUT "/SDCARD/SP.txt"')
     linex()
     naame = input(' \x1b[1;97m• \x1b[1;91m>>\x1b[1;97m FILE NAME : ')
     linex()
