@@ -108,7 +108,6 @@ def entr():
     print(logo)
     print(" \x1b[1;91m• \x1b[1;97m1\x1b[1;91m >\x1b[1;97m LOGIN TOOL BY COOKIE")
     print(" \x1b[1;91m• \x1b[1;97m2\x1b[1;91m >\x1b[1;97m WITHOUT COOKIE MENU ")
-    print(" \x1b[1;91m• \x1b[1;97m0\x1b[1;91m >\x1b[1;97m CONTACT ADMIN ")
     linex()
     ll = input(' \x1b[1;97m• \x1b[1;91m--->\x1b[1;97m ')
     if ll == '1':
@@ -217,7 +216,6 @@ def menu():
     print(f""" \x1b[1;91m• \x1b[1;97m3 \x1b[1;91m>\x1b[1;97m CREATE FILE FROM FOLLOWERS """)
     print(f""" \x1b[1;91m• \x1b[1;97m4 \x1b[1;91m>\x1b[1;97m SEPARATE FILE IDS""")
     print(f""" \x1b[1;91m• \x1b[1;97m5 \x1b[1;91m>\x1b[1;97m REMOVE DUP ID""")
-    print(""" \x1b[1;91m• \x1b[1;97m6 \x1b[1;91m>\x1b[1;97m CONTACT ADMIN """)
     print(""" \x1b[1;91m• \x1b[1;97m0 \x1b[1;91m>\x1b[1;97m LOGOUT COOKIE """)
     linex()
     HEART = input(' \x1b[1;97m• \x1b[1;91m --->\x1b[1;97m  ')
