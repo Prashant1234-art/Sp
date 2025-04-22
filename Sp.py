@@ -227,7 +227,7 @@ class main_crack():
     def crack(self,id):
         global methods
         clear()
-        print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} /sdcard/SP.txt');linex()
+        print(f'{G1}[{A}={G1}]{G1} EXAMPLE {A}:{G1} /sdcard/SONU.txt');linex()
         self.file = input(f'{G1}[{A}?{G2}]{G2} FILE NAME {A}:{G2} ')
         try:
             self.id = open(self.file).read().splitlines()
